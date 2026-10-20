@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.Demo</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
+    <ProjectReference Include="..\CockroachDB.DotNet.AI\CockroachDB.DotNet.AI.csproj" />
+    <ProjectReference Include="..\CockroachDB.DotNet.EntityFramework\CockroachDB.DotNet.EntityFramework.csproj" />
+    <ProjectReference Include="..\CockroachDB.DotNet.Cdc\CockroachDB.DotNet.Cdc.csproj" />
+  </ItemGroup>
+
+</Project>

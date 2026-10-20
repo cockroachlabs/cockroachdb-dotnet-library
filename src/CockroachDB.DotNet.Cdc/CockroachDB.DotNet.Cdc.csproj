@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.Cdc</RootNamespace>
+    <PackageId>CockroachDB.DotNet.Cdc</PackageId>
+    <Description>Change Data Capture — changefeed creation and webhook listener for CockroachDB</Description>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

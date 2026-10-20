@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.Testing</RootNamespace>
+    <PackageId>CockroachDB.DotNet.Testing</PackageId>
+    <Description>Test harness — Testcontainers fixture, concurrency runner, and retry simulators for CockroachDB</Description>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <PackageReference Include="Testcontainers" Version="4.16.0" />
+  </ItemGroup>
+
+</Project>

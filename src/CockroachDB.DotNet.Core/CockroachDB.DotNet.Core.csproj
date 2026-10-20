@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.Core</RootNamespace>
+    <PackageId>CockroachDB.DotNet.Core</PackageId>
+    <Description>Core middleware pipeline, retry engine, circuit breaker, and region context for CockroachDB</Description>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Abstractions\CockroachDB.DotNet.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <PackageReference Include="Polly.Core" Version="8.8.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.13" />
+  </ItemGroup>
+
+</Project>

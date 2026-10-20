@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.Continuum</RootNamespace>
+    <PackageId>CockroachDB.DotNet.Continuum</PackageId>
+    <Description>Cockroach Continuum surfaces for .NET — Cockroach vCluster workload tagging, Cockroach Plenum storage insights, Cockroach Aegis autonomous-ops client, and an agent/MCP tool surface</Description>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Abstractions\CockroachDB.DotNet.Abstractions.csproj" />
+    <ProjectReference Include="..\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.13" />
+  </ItemGroup>
+
+</Project>

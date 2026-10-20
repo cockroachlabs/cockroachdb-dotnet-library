@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CockroachDB.DotNet.EntityFramework</RootNamespace>
+    <PackageId>CockroachDB.DotNet.EntityFramework</PackageId>
+    <Description>EF Core interceptors, entity attributes, and DbContext extensions for CockroachDB</Description>
+    <Version>1.0.1</Version>
+    <!-- Suppress EF1001: We intentionally use Npgsql internal APIs for migration/history overrides -->
+    <NoWarn>$(NoWarn);EF1001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.13" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>

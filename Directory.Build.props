@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- NuGet metadata -->
+    <Authors>CockroachDB Labs</Authors>
+    <Company>Cockroach Labs</Company>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/cockroachlabs/cockroachdb-dotnet-library</PackageProjectUrl>
+    <Description>CockroachDB .NET Library — retry handling, circuit breaker, CDC, multi-region support</Description>
+  </PropertyGroup>
+</Project>
