@@ -1,0 +1,60 @@
+name: Pages
+
+# Builds the NuGet packages (static feed), DocFX API docs, and a CU-themed
+# landing, then deploys to GitHub Pages:
+#   https://cockroachlabs.github.io/cockroachdb-dotnet-library/
+# Install with no token via the static NuGet feed at /nuget/index.json.
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Pack libraries
+        run: |
+          set -euo pipefail
+          for proj in Abstractions Core Continuum AI Cdc EntityFramework Testing; do
+            dotnet pack "src/CockroachDB.DotNet.$proj/CockroachDB.DotNet.$proj.csproj" \
+              -c Release -o nupkgs
+          done
+
+      - name: Build API docs (DocFX)
+        run: |
+          set -euo pipefail
+          dotnet tool install -g docfx
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          docfx metadata docfx.json
+          printf '# API Reference\n\nSelect a namespace or type from the navigation.\n' > api/index.md
+          docfx build docfx.json
+
+      - name: Assemble landing + static NuGet feed
+        run: python3 scripts/build_pages.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages

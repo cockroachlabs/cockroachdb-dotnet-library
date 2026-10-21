@@ -1,0 +1,27 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "src",
+          "files": ["**/*.csproj"],
+          "exclude": ["**/CockroachDB.DotNet.Demo.csproj"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": ["api/**.yml", "api/index.md"] }
+    ],
+    "output": "_site/apidocs",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appName": "CockroachDB .NET Library",
+      "_appTitle": "CockroachDB .NET — API Reference",
+      "_enableSearch": true,
+      "_disableContribution": true
+    }
+  }
+}
