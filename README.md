@@ -1,8 +1,32 @@
 # CockroachDB .NET Library
 
+[![CI](https://github.com/cockroachlabs/cockroachdb-dotnet-library/actions/workflows/ci.yml/badge.svg)](https://github.com/cockroachlabs/cockroachdb-dotnet-library/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/cockroachlabs/cockroachdb-dotnet-library?sort=semver)](https://github.com/cockroachlabs/cockroachdb-dotnet-library/releases)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4.svg)](https://dotnet.microsoft.com/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 A production-quality .NET library for [CockroachDB](https://www.cockroachlabs.com/) that provides retry handling, circuit breaker patterns, CDC (Change Data Capture) webhooks, follower reads, multi-region support, AI/vector search (pgvector), RAG pipelines, and concurrency testing -- all through a composable middleware pipeline.
 
 This is the .NET equivalent of the Java [`cockroachdb-spring-boot-starter`](https://github.com/cockroachlabs/cockroachdb-spring-boot-starter), following idiomatic C# and ASP.NET Core patterns.
+
+## Install
+
+Packages are published to this repository's **GitHub Pages NuGet feed** — no token required. Add the source, then install the packages you need:
+
+```xml
+<!-- NuGet.config -->
+<configuration>
+  <packageSources>
+    <add key="cockroachlabs" value="https://cockroachlabs.github.io/cockroachdb-dotnet-library/nuget/index.json" />
+  </packageSources>
+</configuration>
+```
+
+```bash
+dotnet add package CockroachDB.DotNet.Core --version 1.0.1
+```
+
+API reference: https://cockroachlabs.github.io/cockroachdb-dotnet-library/
 
 ## Architecture
 
