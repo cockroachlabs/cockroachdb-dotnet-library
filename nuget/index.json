@@ -1,0 +1,9 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://cockroachlabs.github.io/cockroachdb-dotnet-library/nuget/flatcontainer/",
+      "@type": "PackageBaseAddress/3.0.0"
+    }
+  ]
+}

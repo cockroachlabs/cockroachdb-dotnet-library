@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace CockroachDB.DotNet.Continuum.VCluster | CockroachDB .NET — API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace CockroachDB.DotNet.Continuum.VCluster | CockroachDB .NET — API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="CockroachDB .NET Library">
+            CockroachDB .NET Library
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CockroachDB.DotNet.Continuum.VCluster">
+
+  <h1 id="CockroachDB_DotNet_Continuum_VCluster" data-uid="CockroachDB.DotNet.Continuum.VCluster" class="text-break">Namespace CockroachDB.DotNet.Continuum.VCluster</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute.html">VirtualClusterAttribute</a></dt>
+      <dd><p>Tags the annotated method's work for a Cockroach vCluster so it is isolated on
+shared capacity. The vCluster name is applied as <code>SET LOCAL application_name</code>
+for the transaction, so the workload is attributable in the DB Console and logs.</p>
+<p>Combine with <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute.html">WorkloadAttribute</a> to also assign a priority/QoS class.</p>
+<p><b>Scope (v1):</b> workload <em>tagging</em>. Routing to a distinct vCluster
+endpoint is platform-dependent and is not performed by the library. Because .NET
+has no runtime method interception here, the attribute is a declarative marker;
+the runtime application path is <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.html">VirtualClusterContext</a> plus
+<a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html">VirtualClusterMiddleware</a> (or <code>OnVirtualCluster(...)</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.html">VirtualClusterBinding</a></dt>
+      <dd><p>An immutable Cockroach vCluster binding: a workload name and an optional
+priority. When <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.html#CockroachDB_DotNet_Continuum_VCluster_VirtualClusterBinding_Priority">Priority</a> is <code>null</code> only the
+<code>application_name</code> tag is applied.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterCommands.html">VirtualClusterCommands</a></dt>
+      <dd><p>Shared helper that applies a Cockroach vCluster <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.html">VirtualClusterBinding</a>
+to a connection as transaction-scoped session settings. Both
+<a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html">VirtualClusterMiddleware</a> and integration tests use this exact code
+path so behavior is verified end-to-end.</p>
+<p><code>SET LOCAL</code> scopes the tags to the current transaction so pooled
+connections are not polluted for the next borrower.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.html">VirtualClusterContext</a></dt>
+      <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.asynclocal-1">AsyncLocal&lt;T&gt;</a>-based Cockroach vCluster context for programmatic use,
+mirroring <code>RegionContext</code>. When set, <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html">VirtualClusterMiddleware</a>
+(and the <code>OnVirtualCluster(...)</code> execution wrapper) apply the tag/QoS to the
+transaction. Flows correctly across async/await continuations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterExecutorExtensions.html">VirtualClusterExecutorExtensions</a></dt>
+      <dd><p>Fluent, programmatic Cockroach vCluster execution: mirrors the template's
+<code>InRegion(...)</code>. Binds a vCluster name/priority for the duration of the
+operation so <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html">VirtualClusterMiddleware</a> tags it.</p>
+<pre><code class="lang-csharp">await executor.OnVirtualCluster("analytics", WorkloadPriority.Low)
+              .ExecuteAsync(() =&gt; repository.RunReportAsync());</code></pre>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html">VirtualClusterMiddleware</a></dt>
+      <dd><p>Pipeline middleware that applies Cockroach vCluster workload tagging. Mirrors
+<code>RegionMiddleware</code>: when a binding is in scope (via the
+<code>OnVirtualCluster(...)</code> wrapper, <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.html">VirtualClusterContext</a>, or a
+binding placed on the context) it opens a transaction and issues the
+<code>SET LOCAL application_name</code> / <code>SET LOCAL default_transaction_quality_of_service</code>
+statements so the workload is attributable, then proceeds.</p>
+<p>Register with <code>pipeline.UseVirtualCluster()</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute.html">WorkloadAttribute</a></dt>
+      <dd><p>Assigns a Cockroach vCluster workload priority to the annotated method, mapped
+to CockroachDB admission-control quality-of-service and applied as
+<code>SET LOCAL default_transaction_quality_of_service</code> for the transaction.</p>
+<p>Most useful alongside <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute.html">VirtualClusterAttribute</a>. Without a
+vCluster binding (attribute or programmatic <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.html">VirtualClusterContext</a>)
+there is nothing for the QoS to attach to.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.WorkloadPriorityExtensions.html">WorkloadPriorityExtensions</a></dt>
+      <dd><p>Maps a <a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority.html">WorkloadPriority</a> to its CockroachDB
+<code>default_transaction_quality_of_service</code> value.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.VirtualClusterScope.html">VirtualClusterScope</a></dt>
+      <dd><p>A disposable scope that restores the previous vCluster binding on dispose.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.IVirtualClusterExecution.html">IVirtualClusterExecution</a></dt>
+      <dd><p>A vCluster-bound execution surface.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority.html">WorkloadPriority</a></dt>
+      <dd><p>Cockroach vCluster workload priority classes, mapped to CockroachDB
+admission-control quality-of-service values.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

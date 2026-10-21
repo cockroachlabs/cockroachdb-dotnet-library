@@ -1,0 +1,2689 @@
+{
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
+  "source_base_path": "/home/runner/work/cockroachdb-dotnet-library/cockroachdb-dotnet-library",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Attributes.SemanticSearchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Attributes.SemanticSearchAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Attributes.SemanticSearchAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Attributes.VectorColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Attributes.VectorColumnAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Attributes.VectorColumnAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Attributes.VectorSearchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Attributes.VectorSearchAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Attributes.VectorSearchAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.ChatMessage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.ChatOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.ChatResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.ChatRole.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.ChatRole",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.IChatClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.IChatClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.IChatClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.IChatCompletionProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.IChatCompletionProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.IChatCompletionProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.RagChatClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.RagChatClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat.RagChatClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Chat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Chat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Configuration.AIOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Configuration.AIOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Configuration.AIOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Configuration.ChatOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Configuration.ChatOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Configuration.ChatOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Configuration.EmbeddingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Configuration.EmbeddingOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Configuration.EmbeddingOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Configuration.VectorSearchOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Configuration.VectorSearchOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Configuration.VectorSearchOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.DistanceMetric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.DistanceMetric.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.DistanceMetric",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.DistanceMetricExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.DistanceMetricExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.DistanceMetricExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Extensions.AIServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Extensions.AIServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Extensions.AIServiceCollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Metrics.IAIMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Metrics.IAIMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Metrics.IAIMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Metrics.InMemoryAIMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Metrics.InMemoryAIMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Metrics.InMemoryAIMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Metrics.NoOpAIMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Metrics.NoOpAIMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Metrics.NoOpAIMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Metrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Metrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Template.VectorSearchTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Template.VectorSearchTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Template.VectorSearchTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.Template.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.Template",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorSearchResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorSearchResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorSearchResult<TId>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore.Builder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.CockroachDBVectorStore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterExpression.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.FilterExpression",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterExpressionConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterExpressionConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.FilterExpressionConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.FilterGroup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterLogic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.FilterLogic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.FilterOperator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.FilterOperator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.IEmbeddingGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.IEmbeddingGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.IEmbeddingGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.VectorDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.VectorDocument.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore.VectorDocument",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.VectorStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.VectorStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI.VectorStore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.AI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.AI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.CockroachDBAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBChangefeedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBChangefeedAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.CockroachDBChangefeedAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBComputedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBComputedAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.CockroachDBComputedAttribute",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBComputedAttribute.yml\" sourcestartlinenumber=\"1\">Marks an entity property as a CockroachDB computed (generated) column.\nCockroachDB requires computed columns to be STORED — virtual columns\nare not supported.</p>\n<example>\n<pre><code class=\"lang-csharp\">public class Order\n{\n    public int Price { get; set; }\n    public int Quantity { get; set; }\n\n    [CockroachDBComputed(\"price * quantity\")]\n    public int Total { get; set; }\n}</code></pre>\n</example>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBFallbackAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CockroachDBFallbackAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.CockroachDBFallbackAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CrdbRegionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.CrdbRegionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.CrdbRegionAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.RegionalByRowAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.RegionalByRowAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.RegionalByRowAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.TransactionIsolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.TransactionIsolation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.TransactionIsolation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedEvent-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.ChangefeedEvent<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.ChangefeedJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.ChangefeedKey",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.ChangefeedOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedPayload-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.ChangefeedPayload-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.ChangefeedPayload<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.IChangefeedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.IChangefeedHandler-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.IChangefeedHandler<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.IChangefeedManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.IChangefeedManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc.IChangefeedManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Cdc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Cdc",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.CircuitBreakerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.CircuitBreakerOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.CircuitBreakerOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MetricsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MetricsOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.MetricsOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RegionOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RegionOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.RegionOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RegionResolverStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RegionResolverStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.RegionResolverStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RetryOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RetryOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.RetryOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.CockroachDBRetryableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.CockroachDBRetryableException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Exceptions.CockroachDBRetryableException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.IExceptionClassifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.IExceptionClassifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Exceptions.IExceptionClassifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Metrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Metrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBFallback-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBFallback-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBFallback<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Pipeline.ICockroachDBMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Pipeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Pipeline",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Region.IRegionResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Region.IRegionResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Region.IRegionResolver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Region.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Region",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Template.IRegionalExecution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Template.IRegionalExecution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Template.IRegionalExecution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Template.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Template",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.ChangefeedManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.ChangefeedManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc.ChangefeedManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.Endpoints.CdcEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.Endpoints.CdcEndpointExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc.Endpoints.CdcEndpointExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.Endpoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.Endpoints.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc.Endpoints",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.Extensions.CdcServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.Extensions.CdcServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc.Extensions.CdcServiceCollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Cdc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Cdc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Cdc",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AegisExhaust.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AegisExhaust.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.AegisExhaust",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.AegisExhaust.yml\" sourcestartlinenumber=\"1\">Publishes application-side operational signals (&quot;exhaust&quot;) to Cockroach Aegis.</p>\n<p>The library sees app-attributed events — serialization retries, circuit\ntrips — that the cluster alone cannot tie back to a specific service/method.\nCall these convenience methods from your retry/circuit hooks (or wire them into\nthe metrics layer) to feed Aegis. Backed by any <xref href=\"CockroachDB.DotNet.Continuum.Aegis.IAegisClient\" data-throw-if-not-resolved=\"false\"></xref>\n(the <xref href=\"CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient\" data-throw-if-not-resolved=\"false\"></xref> by default).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AegisOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AegisOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.AegisOptions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.AegisOptions.yml\" sourcestartlinenumber=\"1\">Configuration for the Cockroach Aegis client.</p>\n<pre><code class=\"lang-csharp\">CockroachDB:Continuum:Aegis:Enabled  = true    // register an IAegisClient\nCockroachDB:Continuum:Aegis:Endpoint =         // blank -&gt; SimulatedAegisClient\nCockroachDB:Continuum:Aegis:Token    =</code></pre>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AppEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.AppEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.AppEvent",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.AppEvent.yml\" sourcestartlinenumber=\"1\">An application-side operational event published to Cockroach Aegis (&quot;exhaust&quot;).\nThe library sees app intent + DB behavior the cluster alone cannot attribute\n(retry storms, circuit trips), so this feeds Aegis high-signal data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.Finding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.Finding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.Finding",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.Finding.yml\" sourcestartlinenumber=\"1\">A Cockroach Aegis finding: an observation the autonomous-ops agents surfaced\nabout a cluster.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.HttpAegisClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.HttpAegisClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.HttpAegisClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.HttpAegisClient.yml\" sourcestartlinenumber=\"1\">Placeholder for the real Cockroach Aegis HTTP client.</p>\n<p>The Aegis API is not yet public, so every operation throws\n<xref href=\"System.NotSupportedException\" data-throw-if-not-resolved=\"false\"></xref> — callers never silently believe they are\ntalking to a live Aegis. Use <xref href=\"CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient\" data-throw-if-not-resolved=\"false\"></xref> for development\nand tests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.IAegisClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.IAegisClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.IAegisClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.IAegisClient.yml\" sourcestartlinenumber=\"1\">Client for Cockroach Aegis autonomous database operations.</p>\n<p>Read-first: list findings/recommendations the agents produced. Also accepts\napplication \"exhaust\" via <xref href=\"CockroachDB.DotNet.Continuum.Aegis.IAegisClient.EmitAsync(CockroachDB.DotNet.Continuum.Aegis.AppEvent%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref> so app-attributed signals can\ninform the agents.</p>\n<p>Aegis is preview/EA and its API is not yet public. The default,\nfully-functional implementation is <xref href=\"CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient\" data-throw-if-not-resolved=\"false\"></xref>; a real\n<xref href=\"CockroachDB.DotNet.Continuum.Aegis.HttpAegisClient\" data-throw-if-not-resolved=\"false\"></xref> is stubbed until the API lands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.McpAegisClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.McpAegisClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.McpAegisClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.McpAegisClient.yml\" sourcestartlinenumber=\"1\">Adapts an <xref href=\"CockroachDB.DotNet.Continuum.Mcp.IMcpClient\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"CockroachDB.DotNet.Continuum.Aegis.IAegisClient\" data-throw-if-not-resolved=\"false\"></xref>. Aegis is\nreachable read-only over the Cockroach Continuum Cloud MCP server; this adapter\ncalls the configured tools and parses their text content as JSON into\n<xref href=\"CockroachDB.DotNet.Continuum.Aegis.Finding\" data-throw-if-not-resolved=\"false\"></xref>/<xref href=\"CockroachDB.DotNet.Continuum.Aegis.Recommendation\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.McpToolNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.McpToolNames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.McpToolNames",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.McpToolNames.yml\" sourcestartlinenumber=\"1\">Maps Aegis operations to the tool names an MCP server advertises.\nThe Cockroach Continuum MCP tool contract is not pinned here: names differ by\nserver and may change. Discover them with <xref href=\"CockroachDB.DotNet.Continuum.Mcp.IMcpClient.ListToolsAsync(System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>\nand set the ones you need; an unset name throws rather than guessing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.Recommendation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.Recommendation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.Recommendation",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.Recommendation.yml\" sourcestartlinenumber=\"1\">A Cockroach Aegis recommendation: a suggested action tied to one or more findings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Aegis.SimulatedAegisClient.yml\" sourcestartlinenumber=\"1\">In-memory Cockroach Aegis client for local development and tests. Returns a\nsmall canned set of findings/recommendations and records every emitted\n<xref href=\"CockroachDB.DotNet.Continuum.Aegis.AppEvent\" data-throw-if-not-resolved=\"false\"></xref> so tests (and demos) can inspect the exhaust.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Aegis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Aegis",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute.yml\" sourcestartlinenumber=\"1\">Exposes the annotated method as an agent-callable tool (e.g. for Cockroach Aegis\nor any MCP client). Only <code>[AgentTool]</code> methods are exposed, and\n<xref href=\"CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute.Destructive\" data-throw-if-not-resolved=\"false\"></xref> tools are hidden unless the caller explicitly opts in —\nleast privilege by default.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.CrdbAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.CrdbAgent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent.CrdbAgent",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Agent.CrdbAgent.yml\" sourcestartlinenumber=\"1\">Agent / MCP facade over <code>[AgentTool]</code>-annotated providers.</p>\n<pre><code class=\"lang-csharp\">var agent = CrdbAgent.From(new CrdbOpsTools(dataSource, storageInsights));\nvar tools = agent.ListTools();                        // MCP tools/list\nvar result = await agent.InvokeAsync(\"health\", null); // MCP tools/call</code></pre>\n<p>Least-privilege: destructive tools are excluded unless\n<xref href=\"CockroachDB.DotNet.Continuum.Agent.CrdbAgent.AllowDestructive(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> is enabled. A full MCP stdio/HTTP server is out of\nscope for this increment; adapt <xref href=\"CockroachDB.DotNet.Continuum.Agent.CrdbAgent.ListTools\" data-throw-if-not-resolved=\"false\"></xref>/<xref href=\"CockroachDB.DotNet.Continuum.Agent.CrdbAgent.InvokeAsync(System.String%2cSystem.Collections.Generic.IReadOnlyDictionary%7bSystem.String%2cSystem.Object%7d)\" data-throw-if-not-resolved=\"false\"></xref>\nonto your transport of choice.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.CrdbOpsTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.CrdbOpsTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent.CrdbOpsTools",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Agent.CrdbOpsTools.yml\" sourcestartlinenumber=\"1\">Built-in, safe (non-destructive) <xref href=\"CockroachDB.DotNet.Continuum.Agent.AgentToolAttribute\" data-throw-if-not-resolved=\"false\"></xref> tools exposing\ncommon CockroachDB operations to an agent: connectivity and Cockroach Plenum\nstorage usage.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.ToolDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.ToolDescriptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent.ToolDescriptor",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Agent.ToolDescriptor.yml\" sourcestartlinenumber=\"1\">A described, agent-callable tool.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.ToolRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.ToolRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent.ToolRegistry",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Agent.ToolRegistry.yml\" sourcestartlinenumber=\"1\">Reflects over <code>[AgentTool]</code>-annotated methods on provider objects and\nexposes them as described, invokable tools. Least-privilege: destructive tools\nare only registered when <code>allowDestructive</code> is set.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Agent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Agent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.CloudOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.CloudOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.CloudOptions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.CloudOptions.yml\" sourcestartlinenumber=\"1\">Options for the Continuum Cloud control-plane client.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.Cluster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.Cluster.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.Cluster",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.Cluster.yml\" sourcestartlinenumber=\"1\">A CockroachDB Cloud cluster (control-plane view).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudHealthCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudHealthCheck",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudHealthCheck.yml\" sourcestartlinenumber=\"1\">Health check for the Cockroach Continuum Cloud control-plane connection.\nHealthy when clusters can be listed; the result details report whether the\nclient is simulated or live and the cluster count.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.ContinuumCloudServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">DI registration for the Continuum Cloud control-plane surface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.HttpCloudClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.HttpCloudClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.HttpCloudClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.HttpCloudClient.yml\" sourcestartlinenumber=\"1\">HTTP-backed <xref href=\"CockroachDB.DotNet.Continuum.Cloud.ICloudClient\" data-throw-if-not-resolved=\"false\"></xref> that talks to the real CockroachDB Cloud\nAPI using a service-account Bearer token. Responses are parsed with\n<xref href=\"System.Text.Json.JsonDocument\" data-throw-if-not-resolved=\"false\"></xref> by their documented (snake_case) field names, so the\nclient is independent of any serializer naming configuration. Construct with\n<xref href=\"CockroachDB.DotNet.Continuum.Cloud.HttpCloudClient.Create(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> in production, or inject an <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> backed\nby a fake handler in tests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ICloudClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ICloudClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.ICloudClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.ICloudClient.yml\" sourcestartlinenumber=\"1\">The Cloud control-plane surface used by Continuum integrations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ISqlRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.ISqlRunner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.ISqlRunner",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.ISqlRunner.yml\" sourcestartlinenumber=\"1\">A minimal SQL executor the <xref href=\"CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager\" data-throw-if-not-resolved=\"false\"></xref> needs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExport.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.MetricExport",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.MetricExport.yml\" sourcestartlinenumber=\"1\">Typed builders for the three metric-export sinks. Each returns a\n<xref href=\"CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig\" data-throw-if-not-resolved=\"false\"></xref> ready to pass to\n<xref href=\"CockroachDB.DotNet.Continuum.Cloud.ICloudClient.ConfigureMetricExportAsync(System.String%2cCockroachDB.DotNet.Continuum.Cloud.MetricExportConfig%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>, so callers don't have to\nremember the Cloud API's field names. The raw <xref href=\"CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig.Settings\" data-throw-if-not-resolved=\"false\"></xref>\ndictionary remains available for sinks or fields not covered here (e.g. Azure Monitor).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig.yml\" sourcestartlinenumber=\"1\">Metric-export configuration. <xref href=\"CockroachDB.DotNet.Continuum.Cloud.MetricExportConfig.Settings\" data-throw-if-not-resolved=\"false\"></xref> carries the target-specific\nfields (datadog: <code>site</code>, <code>api_key</code>; cloudwatch: <code>role_arn</code>, etc.).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExportTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.MetricExportTarget.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.MetricExportTarget",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.MetricExportTarget.yml\" sourcestartlinenumber=\"1\">A Cloud metric-export sink.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.NpgsqlSqlRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.NpgsqlSqlRunner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.NpgsqlSqlRunner",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.NpgsqlSqlRunner.yml\" sourcestartlinenumber=\"1\"><xref href=\"CockroachDB.DotNet.Continuum.Cloud.ISqlRunner\" data-throw-if-not-resolved=\"false\"></xref> backed by an Npgsql data source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.SimulatedCloudClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.SimulatedCloudClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.SimulatedCloudClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.SimulatedCloudClient.yml\" sourcestartlinenumber=\"1\">In-memory <xref href=\"CockroachDB.DotNet.Continuum.Cloud.ICloudClient\" data-throw-if-not-resolved=\"false\"></xref> for development and tests. Serves a small\ncanned set of clusters and records metric-export calls. Selected automatically\nwhen no Cloud API key is configured.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.VirtualCluster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.VirtualCluster.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.VirtualCluster",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.VirtualCluster.yml\" sourcestartlinenumber=\"1\">A Cockroach virtual cluster. <xref href=\"CockroachDB.DotNet.Continuum.Cloud.VirtualCluster.RoutingId\" data-throw-if-not-resolved=\"false\"></xref> is used when connecting\n(it differs from the control-plane cluster ID); see\n<xref href=\"CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager.RoutingConnString(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Cloud.VirtualClusterManager.yml\" sourcestartlinenumber=\"1\">Manages Cockroach virtual-cluster lifecycle over a SQL connection using the\n<code>CREATE / SHOW / DROP VIRTUAL CLUSTER</code> statements (these require a\nContinuum-enabled cluster). Names are validated before interpolation into DDL.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Cloud.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Cloud",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.ContinuumPipelineBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.ContinuumPipelineBuilderExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Extensions.ContinuumPipelineBuilderExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Extensions.ContinuumPipelineBuilderExtensions.yml\" sourcestartlinenumber=\"1\">Pipeline-builder extensions for Cockroach Continuum middleware.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.ContinuumServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.ContinuumServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Extensions.ContinuumServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Extensions.ContinuumServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">DI registration for the Cockroach Continuum surfaces: Cockroach Plenum storage\ninsights, Cockroach Aegis, and the agent/MCP tool surface. All are additive and\nopt-in.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.CallResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.CallResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.CallResult",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.CallResult.yml\" sourcestartlinenumber=\"1\">The result of a <code>tools/call</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.ContentBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.ContentBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.ContentBlock",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.ContentBlock.yml\" sourcestartlinenumber=\"1\">One content block of a tool-call result.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.HttpMcpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.HttpMcpClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.HttpMcpClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.HttpMcpClient.yml\" sourcestartlinenumber=\"1\">HTTP-backed <xref href=\"CockroachDB.DotNet.Continuum.Mcp.IMcpClient\" data-throw-if-not-resolved=\"false\"></xref> speaking the MCP Streamable HTTP transport\n(spec 2025-06-18). Lazily performs the initialize handshake before the first\ntools call, echoes the server-assigned <code>Mcp-Session-Id</code> and the\n<code>MCP-Protocol-Version</code> header, and handles both <code>application/json</code> and\n<code>text/event-stream</code> responses. Responses are parsed with\n<xref href=\"System.Text.Json.JsonDocument\" data-throw-if-not-resolved=\"false\"></xref> by field name. Construct with <xref href=\"CockroachDB.DotNet.Continuum.Mcp.HttpMcpClient.Create(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> in\nproduction, or inject an <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> backed by a fake handler in tests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.IMcpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.IMcpClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.IMcpClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.IMcpClient.yml\" sourcestartlinenumber=\"1\">Minimal client for the Model Context Protocol (MCP). MCP is a public, versioned\nprotocol, so unlike the not-yet-public Aegis REST API this speaks the real wire\nformat: discover tools and call them on a remote MCP server (for example the\nCockroach Continuum Cloud MCP server).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.SimulatedMcpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.SimulatedMcpClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.SimulatedMcpClient",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.SimulatedMcpClient.yml\" sourcestartlinenumber=\"1\">In-memory <xref href=\"CockroachDB.DotNet.Continuum.Mcp.IMcpClient\" data-throw-if-not-resolved=\"false\"></xref> for development and tests. Advertises a small\ncanned tool set and echoes tool calls, so code that drives an MCP server runs\noffline. Records every call for assertions via <xref href=\"CockroachDB.DotNet.Continuum.Mcp.SimulatedMcpClient.Calls\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.Tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.Tool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp.Tool",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Mcp.Tool.yml\" sourcestartlinenumber=\"1\">A tool advertised by an MCP server.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Mcp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Mcp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.IStorageInsights.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.IStorageInsights.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Plenum.IStorageInsights",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Plenum.IStorageInsights.yml\" sourcestartlinenumber=\"1\">Read-only Cockroach Plenum storage insights: usage-based storage signals per\ntable using only customer-safe surfaces.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.StorageInsights.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.StorageInsights.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Plenum.StorageInsights",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Plenum.StorageInsights.yml\" sourcestartlinenumber=\"1\">Read-only Cockroach Plenum storage insights.</p>\n<p>Surfaces usage-based storage signals — per-table estimated row counts and,\nwhere the running version exposes it, approximate on-disk size — using only\ncustomer-safe <code>SHOW</code> surfaces (never <code>crdb_internal</code>, which is\nrestricted in v26.2). Version-tolerant: signals a given version does not expose\nare returned as <code>null</code> rather than raising, and any query failure degrades\nto an empty result instead of throwing the whole summary.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.TableStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.TableStorage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Plenum.TableStorage",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.Plenum.TableStorage.yml\" sourcestartlinenumber=\"1\">Cockroach Plenum storage signal for a single table. <xref href=\"CockroachDB.DotNet.Continuum.Plenum.TableStorage.Rows\" data-throw-if-not-resolved=\"false\"></xref> and\n<xref href=\"CockroachDB.DotNet.Continuum.Plenum.TableStorage.Bytes\" data-throw-if-not-resolved=\"false\"></xref> are best-effort: they are <code>null</code> when the running\nCockroachDB version does not expose that signal, rather than failing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.Plenum.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.Plenum",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.IVirtualClusterExecution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.IVirtualClusterExecution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.IVirtualClusterExecution",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.IVirtualClusterExecution.yml\" sourcestartlinenumber=\"1\">A vCluster-bound execution surface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute.yml\" sourcestartlinenumber=\"1\">Tags the annotated method's work for a Cockroach vCluster so it is isolated on\nshared capacity. The vCluster name is applied as <code>SET LOCAL application_name</code>\nfor the transaction, so the workload is attributable in the DB Console and logs.</p>\n<p>Combine with <xref href=\"CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute\" data-throw-if-not-resolved=\"false\"></xref> to also assign a priority/QoS class.</p>\n<p><b>Scope (v1):</b> workload <em>tagging</em>. Routing to a distinct vCluster\nendpoint is platform-dependent and is not performed by the library. Because .NET\nhas no runtime method interception here, the attribute is a declarative marker;\nthe runtime application path is <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext\" data-throw-if-not-resolved=\"false\"></xref> plus\n<xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware\" data-throw-if-not-resolved=\"false\"></xref> (or <code>OnVirtualCluster(...)</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.yml\" sourcestartlinenumber=\"1\">An immutable Cockroach vCluster binding: a workload name and an optional\npriority. When <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding.Priority\" data-throw-if-not-resolved=\"false\"></xref> is <code>null</code> only the\n<code>application_name</code> tag is applied.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterCommands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterCommands",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterCommands.yml\" sourcestartlinenumber=\"1\">Shared helper that applies a Cockroach vCluster <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterBinding\" data-throw-if-not-resolved=\"false\"></xref>\nto a connection as transaction-scoped session settings. Both\n<xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware\" data-throw-if-not-resolved=\"false\"></xref> and integration tests use this exact code\npath so behavior is verified end-to-end.</p>\n<p><code>SET LOCAL</code> scopes the tags to the current transaction so pooled\nconnections are not polluted for the next borrower.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext.yml\" sourcestartlinenumber=\"1\"><xref href=\"System.Threading.AsyncLocal%601\" data-throw-if-not-resolved=\"false\"></xref>-based Cockroach vCluster context for programmatic use,\nmirroring <code>RegionContext</code>. When set, <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware\" data-throw-if-not-resolved=\"false\"></xref>\n(and the <code>OnVirtualCluster(...)</code> execution wrapper) apply the tag/QoS to the\ntransaction. Flows correctly across async/await continuations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterExecutorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterExecutorExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterExecutorExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterExecutorExtensions.yml\" sourcestartlinenumber=\"1\">Fluent, programmatic Cockroach vCluster execution: mirrors the template's\n<code>InRegion(...)</code>. Binds a vCluster name/priority for the duration of the\noperation so <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware\" data-throw-if-not-resolved=\"false\"></xref> tags it.</p>\n<pre><code class=\"lang-csharp\">await executor.OnVirtualCluster(\"analytics\", WorkloadPriority.Low)\n              .ExecuteAsync(() =&gt; repository.RunReportAsync());</code></pre>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterMiddleware.yml\" sourcestartlinenumber=\"1\">Pipeline middleware that applies Cockroach vCluster workload tagging. Mirrors\n<code>RegionMiddleware</code>: when a binding is in scope (via the\n<code>OnVirtualCluster(...)</code> wrapper, <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext\" data-throw-if-not-resolved=\"false\"></xref>, or a\nbinding placed on the context) it opens a transaction and issues the\n<code>SET LOCAL application_name</code> / <code>SET LOCAL default_transaction_quality_of_service</code>\nstatements so the workload is attributable, then proceeds.</p>\n<p>Register with <code>pipeline.UseVirtualCluster()</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.VirtualClusterScope",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.VirtualClusterScope.yml\" sourcestartlinenumber=\"1\">A disposable scope that restores the previous vCluster binding on dispose.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.WorkloadAttribute.yml\" sourcestartlinenumber=\"1\">Assigns a Cockroach vCluster workload priority to the annotated method, mapped\nto CockroachDB admission-control quality-of-service and applied as\n<code>SET LOCAL default_transaction_quality_of_service</code> for the transaction.</p>\n<p>Most useful alongside <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterAttribute\" data-throw-if-not-resolved=\"false\"></xref>. Without a\nvCluster binding (attribute or programmatic <xref href=\"CockroachDB.DotNet.Continuum.VCluster.VirtualClusterContext\" data-throw-if-not-resolved=\"false\"></xref>)\nthere is nothing for the QoS to attach to.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority.yml\" sourcestartlinenumber=\"1\">Cockroach vCluster workload priority classes, mapped to CockroachDB\nadmission-control quality-of-service values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriorityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriorityExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster.WorkloadPriorityExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Continuum.VCluster.WorkloadPriorityExtensions.yml\" sourcestartlinenumber=\"1\">Maps a <xref href=\"CockroachDB.DotNet.Continuum.VCluster.WorkloadPriority\" data-throw-if-not-resolved=\"false\"></xref> to its CockroachDB\n<code>default_transaction_quality_of_service</code> value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Continuum.VCluster.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Continuum.VCluster",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Exceptions.NpgsqlExceptionClassifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Exceptions.NpgsqlExceptionClassifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Exceptions.NpgsqlExceptionClassifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Extensions.CockroachDBPipelineBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Extensions.CockroachDBPipelineBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Extensions.CockroachDBPipelineBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Extensions.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Extensions.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Extensions.ServiceCollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.FollowerRead.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.FollowerRead",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Health.CockroachDBHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Health.CockroachDBHealthCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Health.CockroachDBHealthCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Health.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Health.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Health",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Metrics.InMemoryMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Metrics.InMemoryMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Metrics.InMemoryMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Metrics.NoopMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Metrics.NoopMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Metrics.NoopMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Metrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Metrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.CircuitBreakerMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.CircuitBreakerMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.CircuitBreakerMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.CockroachDBCircuitBreakerOpenException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.CockroachDBCircuitBreakerOpenException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.CockroachDBCircuitBreakerOpenException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.MetricsMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.MetricsMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.MetricsMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.RegionMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.RegionMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.RegionMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.RetryMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.RetryMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware.RetryMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Middleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Middleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Middleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Pipeline.CockroachDBPipelineExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Pipeline.CockroachDBPipelineExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Pipeline.CockroachDBPipelineExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Pipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Pipeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Pipeline",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Region.DefaultRegionResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Region.DefaultRegionResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Region.DefaultRegionResolver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Region.RegionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Region.RegionContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Region.RegionContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Region.RegionScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Region.RegionScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Region.RegionScope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Region.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Region",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Template.CockroachDBTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Core.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Core.Template.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Core.Template",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.CockroachDBCommandInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.CockroachDBCommandInterceptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Interceptors.CockroachDBCommandInterceptor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Interceptors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository.yml\" sourcestartlinenumber=\"1\">History repository for CockroachDB that disables migration database locking.</p>\n<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository.yml\" sourcestartlinenumber=\"3\">CockroachDB does not support PostgreSQL advisory locks (pg_advisory_lock)\nor LOCK TABLE statements. EF Core 10+ requires <xref href=\"Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock\" data-throw-if-not-resolved=\"false\"></xref>\nfor concurrent migration safety. This implementation provides a no-op lock,\nrelying on CockroachDB's SERIALIZABLE isolation for conflict handling.</p>\n<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBHistoryRepository.yml\" sourcestartlinenumber=\"8\">Migration coordination should happen at the deployment level\n(e.g., single-pod deploy, migration job, deployment gate).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBMigrationsSqlGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBMigrationsSqlGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBMigrationsSqlGenerator",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBMigrationsSqlGenerator.yml\" sourcestartlinenumber=\"1\">Migration SQL generator for CockroachDB, extending Npgsql's PostgreSQL generator\nwith CockroachDB-specific DDL overrides: computed columns (STORED only),\nJSON default fix, and unique_rowid() support.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBNoopDatabaseLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBNoopDatabaseLock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBNoopDatabaseLock",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Migrations.CockroachDBNoopDatabaseLock.yml\" sourcestartlinenumber=\"1\">No-op database lock for CockroachDB — advisory locks are not available.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.ModelConfiguration.CockroachDBModelBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.ModelConfiguration.CockroachDBModelBuilderExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.ModelConfiguration.CockroachDBModelBuilderExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.ModelConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.ModelConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.ModelConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.CockroachDBConcurrencyRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.CockroachDBConcurrencyRunner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.CockroachDBConcurrencyRunner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.CockroachDBFixture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.CockroachDBFixture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.CockroachDBFixture",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.ConcurrencyResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.ConcurrencyResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.ConcurrencyResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.FollowerReadResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.FollowerReadResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.FollowerReadResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.FollowerReadSimulator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.FollowerReadSimulator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.FollowerReadSimulator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.RetrySimulator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.RetrySimulator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.RetrySimulator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.TestExceptionClassifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.TestExceptionClassifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing.TestExceptionClassifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Testing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Testing",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
