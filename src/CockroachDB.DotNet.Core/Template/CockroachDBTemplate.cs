@@ -25,20 +25,28 @@ public sealed class CockroachDBTemplate(ICockroachDBExecutor executor) : ICockro
     }
 
     public Task<T> ExecuteFollowerReadAsync<T>(Func<Task<T>> operation)
+        => ExecuteFollowerReadAsync(operation, default);
+
+    public Task ExecuteFollowerReadAsync(Func<Task> operation)
+        => ExecuteFollowerReadAsync(operation, default);
+
+    public Task<T> ExecuteFollowerReadAsync<T>(Func<Task<T>> operation, FollowerReadStaleness staleness)
     {
         return executor.ExecuteAsync(operation, ctx =>
         {
             ctx.UseFollowerRead = true;
             ctx.ReadOnly = true;
+            ctx.Staleness = staleness;
         });
     }
 
-    public Task ExecuteFollowerReadAsync(Func<Task> operation)
+    public Task ExecuteFollowerReadAsync(Func<Task> operation, FollowerReadStaleness staleness)
     {
         return executor.ExecuteAsync(operation, ctx =>
         {
             ctx.UseFollowerRead = true;
             ctx.ReadOnly = true;
+            ctx.Staleness = staleness;
         });
     }
 

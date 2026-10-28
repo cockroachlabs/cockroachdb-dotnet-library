@@ -50,7 +50,7 @@ public sealed class CockroachDBCommandInterceptor : DbCommandInterceptor
         var prefix = "";
 
         if (FollowerReadContext.Current)
-            prefix += "SET TRANSACTION AS OF SYSTEM TIME follower_read_timestamp(); ";
+            prefix += $"SET TRANSACTION AS OF SYSTEM TIME {FollowerReadContext.CurrentStaleness.ToAsOfSystemTime()}; ";
 
         if (RegionContext.Current is { Length: > 0 } region)
         {

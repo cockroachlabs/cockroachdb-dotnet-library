@@ -125,7 +125,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 ```
 
 The `CockroachDBCommandInterceptor` automatically:
-- Detects `FollowerReadContext` and prepends `SET TRANSACTION AS OF SYSTEM TIME follower_read_timestamp()`
+- Detects `FollowerReadContext` and prepends `SET TRANSACTION AS OF SYSTEM TIME` -- `follower_read_timestamp()`, or `'-Ns'` when a staleness is set
 - Detects `RegionContext` and prepends `SET crdb_region = '<region>'`
 
 ## Features
@@ -160,9 +160,9 @@ Configuration in `appsettings.json`:
 
 ### Follower Reads
 
-Read from the nearest replica for lower latency at the cost of slight staleness. Three activation methods:
+Read from the nearest replica for lower latency at the cost of slight staleness (CockroachDB serves follower reads at roughly 4.2s old). Staleness is applied to the **EF Core commands** that run inside the activated scope -- the `CockroachDBCommandInterceptor` prepends `SET TRANSACTION AS OF SYSTEM TIME` to each command on its own connection. Raw `NpgsqlCommand`s that bypass EF Core are not affected.
 
-**1. Ambient Context (EF Core)**
+**1. Ambient scope (EF Core)**
 ```csharp
 using (FollowerReadContext.Scoped())
 {
@@ -176,10 +176,33 @@ var orders = await crdb.ExecuteFollowerReadAsync(async () =>
     await db.Orders.AsNoTracking().ToListAsync());
 ```
 
-**3. Attribute**
+Both run at `follower_read_timestamp()` by default.
+
+**Choosing how far back to read.** Pass a `FollowerReadStaleness` to read further into the past. `HoursAgo`, `MinutesAgo` and `SecondsAgo` add up and compose into `AS OF SYSTEM TIME '-Ns'`:
+
 ```csharp
-[FollowerRead]
-public class StaleReadService { /* ... */ }
+new FollowerReadStaleness()                             // follower_read_timestamp()
+new FollowerReadStaleness(SecondsAgo: 20)               // '-20s'
+new FollowerReadStaleness(MinutesAgo: 5)                // '-300s'
+new FollowerReadStaleness(HoursAgo: 1, MinutesAgo: 30)  // '-5400s' (1h30m)
+
+// On either path:
+using (FollowerReadContext.Scoped(new FollowerReadStaleness(SecondsAgo: 30)))
+    return await db.Orders.AsNoTracking().ToListAsync();
+
+await crdb.ExecuteFollowerReadAsync(
+    async () => await db.Orders.AsNoTracking().ToListAsync(),
+    new FollowerReadStaleness(MinutesAgo: 5));
+```
+
+A time more recent than `follower_read_timestamp()` still reads historical data, but the leaseholder serves it rather than the nearest replica. A time older than the table's garbage-collection window fails in CockroachDB.
+
+**Never a silent current read.** A negative `HoursAgo`/`MinutesAgo`/`SecondsAgo` throws `ArgumentException` (fail-fast) instead of degrading to a current read. The template path records the follower-read metric on both success and failure.
+
+**The `[FollowerRead]` attribute** carries the same `HoursAgo`/`MinutesAgo`/`SecondsAgo` knobs and exposes `ToStaleness()`, but unlike the Spring `@FollowerRead` aspect, .NET has no runtime interception that scans methods for it. It is declarative config -- compose its staleness and pass it to one of the paths above:
+
+```csharp
+var staleness = new FollowerReadAttribute { SecondsAgo = 30 }.ToStaleness(); // '-30s'
 ```
 
 ### Circuit Breaker

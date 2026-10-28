@@ -1,13 +1,12 @@
 using System.Diagnostics;
 using CockroachDB.DotNet.Abstractions.Metrics;
 using CockroachDB.DotNet.Abstractions.Pipeline;
+using CockroachDB.DotNet.Core.FollowerRead;
 using Microsoft.Extensions.Logging;
-using Npgsql;
 
 namespace CockroachDB.DotNet.Core.Middleware;
 
 public sealed class FollowerReadMiddleware(
-    NpgsqlDataSource dataSource,
     ICockroachDBMetrics metrics,
     ILogger<FollowerReadMiddleware> logger) : ICockroachDBMiddleware
 {
@@ -26,19 +25,26 @@ public sealed class FollowerReadMiddleware(
 
         try
         {
-            await using var connection = await dataSource.OpenConnectionAsync();
-            await using var cmd = connection.CreateCommand();
-            cmd.CommandText = FollowerReadSql;
-            await cmd.ExecuteNonQueryAsync();
-
-            logger.LogDebug("CockroachDB follower read activated");
+            // Validate up front so a negative staleness FAILS FAST (metered as a failure
+            // by the finally) rather than silently serving a current read.
+            var clause = context.Staleness.ToAsOfSystemTime();
 
             context.ReadOnly = true;
-            context.Items["cockroachdb.follower_read.connection"] = connection;
 
-            var result = await next(context);
-            success = true;
-            return result;
+            // Bind the staleness to the connection that actually runs the operation's
+            // queries. The EF command interceptor reads this AsyncLocal and prefixes
+            // SET TRANSACTION AS OF SYSTEM TIME onto each command on its OWN connection.
+            // The previous design opened a throwaway connection, ran SET on it, then
+            // abandoned it while the operation read from a different pooled connection —
+            // a silent current read. See the port notes for CockroachDB Spring PR #10.
+            using (FollowerReadContext.Scoped(context.Staleness))
+            {
+                logger.LogDebug("CockroachDB follower read activated (AS OF SYSTEM TIME {Clause})", clause);
+
+                var result = await next(context);
+                success = true;
+                return result;
+            }
         }
         finally
         {
