@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.Core</RootNamespace>
     <PackageId>CockroachDB.DotNet.Core</PackageId>
     <Description>Core middleware pipeline, retry engine, circuit breaker, and region context for CockroachDB</Description>
-    <Version>1.1.0</Version>
+    <Version>0.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

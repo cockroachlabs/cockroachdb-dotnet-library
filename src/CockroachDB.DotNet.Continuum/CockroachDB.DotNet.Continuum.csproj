@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.Continuum</RootNamespace>
     <PackageId>CockroachDB.DotNet.Continuum</PackageId>
     <Description>Cockroach Continuum surfaces for .NET — Cockroach vCluster workload tagging, Cockroach Plenum storage insights, Cockroach Aegis autonomous-ops client, and an agent/MCP tool surface</Description>
-    <Version>1.1.0</Version>
+    <Version>0.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

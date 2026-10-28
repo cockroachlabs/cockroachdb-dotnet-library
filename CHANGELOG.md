@@ -4,7 +4,7 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - 2026-10-28
+## [0.1.2] - 2026-10-28
 
 Follower reads can now target a specific staleness, and a bug that caused the
 middleware path to silently serve current data has been fixed.
@@ -42,4 +42,4 @@ middleware path to silently serve current data has been fixed.
   The AsyncLocal/interceptor binding covers EF commands — a raw `NpgsqlCommand`
   inside a template operation must set the clause itself.
 
-[1.1.0]: https://github.com/cockroachlabs/cockroachdb-dotnet-library/releases/tag/v1.1.0
+[0.1.2]: https://github.com/cockroachlabs/cockroachdb-dotnet-library/releases/tag/v0.1.2
