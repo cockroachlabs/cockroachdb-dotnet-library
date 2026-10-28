@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.EntityFramework</RootNamespace>
     <PackageId>CockroachDB.DotNet.EntityFramework</PackageId>
     <Description>EF Core interceptors, entity attributes, and DbContext extensions for CockroachDB</Description>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <!-- Suppress EF1001: We intentionally use Npgsql internal APIs for migration/history overrides -->
     <NoWarn>$(NoWarn);EF1001</NoWarn>
   </PropertyGroup>

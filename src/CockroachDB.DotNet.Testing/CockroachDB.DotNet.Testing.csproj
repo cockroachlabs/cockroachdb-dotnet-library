@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.Testing</RootNamespace>
     <PackageId>CockroachDB.DotNet.Testing</PackageId>
     <Description>Test harness — Testcontainers fixture, concurrency runner, and retry simulators for CockroachDB</Description>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

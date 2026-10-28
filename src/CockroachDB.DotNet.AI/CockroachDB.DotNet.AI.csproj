@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.AI</RootNamespace>
     <PackageId>CockroachDB.DotNet.AI</PackageId>
     <Description>AI and vector search support for CockroachDB — pgvector similarity search, RAG pipelines, semantic search, and chat integration</Description>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
