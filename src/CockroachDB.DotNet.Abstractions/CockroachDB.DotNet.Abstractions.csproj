@@ -4,7 +4,7 @@
     <RootNamespace>CockroachDB.DotNet.Abstractions</RootNamespace>
     <PackageId>CockroachDB.DotNet.Abstractions</PackageId>
     <Description>Interfaces, attributes, and configuration models for the CockroachDB .NET library</Description>
-    <Version>1.1.0</Version>
+    <Version>0.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
