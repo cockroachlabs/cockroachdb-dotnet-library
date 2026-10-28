@@ -643,6 +643,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.yml\" sourcestartlinenumber=\"1\">Additive follower-read staleness. The parts ADD UP and compose into a single\n<code>AS OF SYSTEM TIME</code> argument. All-zero (the default value) means\n&quot;no explicit staleness&quot; and uses <code>follower_read_timestamp()</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute.yml",
       "output": {
         ".html": {
@@ -2671,11 +2685,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""

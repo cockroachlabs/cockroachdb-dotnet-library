@@ -2470,6 +2470,174 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.AlwaysStale
   nameWithType: FollowerReadAttribute.AlwaysStale
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo
+  name: HoursAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_HoursAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo
+  nameWithType: FollowerReadAttribute.HoursAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo*
+  name: HoursAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_HoursAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.HoursAgo
+  nameWithType: FollowerReadAttribute.HoursAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo
+  name: MinutesAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_MinutesAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo
+  nameWithType: FollowerReadAttribute.MinutesAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo*
+  name: MinutesAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_MinutesAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.MinutesAgo
+  nameWithType: FollowerReadAttribute.MinutesAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo
+  name: SecondsAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_SecondsAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo
+  nameWithType: FollowerReadAttribute.SecondsAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo*
+  name: SecondsAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_SecondsAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.SecondsAgo
+  nameWithType: FollowerReadAttribute.SecondsAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness
+  name: ToStaleness()
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_ToStaleness
+  commentId: M:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness()
+  nameWithType: FollowerReadAttribute.ToStaleness()
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness*
+  name: ToStaleness
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_ToStaleness_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute.ToStaleness
+  nameWithType: FollowerReadAttribute.ToStaleness
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness
+  name: FollowerReadStaleness
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html
+  commentId: T:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness
+  nameWithType: FollowerReadStaleness
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.#ctor(System.Int64,System.Int64,System.Int64)
+  name: FollowerReadStaleness(long, long, long)
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness__ctor_System_Int64_System_Int64_System_Int64_
+  commentId: M:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.#ctor(System.Int64,System.Int64,System.Int64)
+  name.vb: New(Long, Long, Long)
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FollowerReadStaleness(long, long, long)
+  fullName.vb: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.New(Long, Long, Long)
+  nameWithType: FollowerReadStaleness.FollowerReadStaleness(long, long, long)
+  nameWithType.vb: FollowerReadStaleness.New(Long, Long, Long)
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.#ctor*
+  name: FollowerReadStaleness
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness__ctor_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FollowerReadStaleness
+  fullName.vb: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.New
+  nameWithType: FollowerReadStaleness.FollowerReadStaleness
+  nameWithType.vb: FollowerReadStaleness.New
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute)
+  name: FromAttribute(FollowerReadAttribute)
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_FromAttribute_CockroachDB_DotNet_Abstractions_Attributes_FollowerReadAttribute_
+  commentId: M:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute)
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadAttribute)
+  nameWithType: FollowerReadStaleness.FromAttribute(FollowerReadAttribute)
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute*
+  name: FromAttribute
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_FromAttribute_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.FromAttribute
+  nameWithType: FollowerReadStaleness.FromAttribute
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo
+  name: HoursAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_HoursAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo
+  nameWithType: FollowerReadStaleness.HoursAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo*
+  name: HoursAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_HoursAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.HoursAgo
+  nameWithType: FollowerReadStaleness.HoursAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault
+  name: IsDefault
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_IsDefault
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault
+  nameWithType: FollowerReadStaleness.IsDefault
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault*
+  name: IsDefault
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_IsDefault_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.IsDefault
+  nameWithType: FollowerReadStaleness.IsDefault
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo
+  name: MinutesAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_MinutesAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo
+  nameWithType: FollowerReadStaleness.MinutesAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo*
+  name: MinutesAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_MinutesAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.MinutesAgo
+  nameWithType: FollowerReadStaleness.MinutesAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo
+  name: SecondsAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_SecondsAgo
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo
+  nameWithType: FollowerReadStaleness.SecondsAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo*
+  name: SecondsAgo
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_SecondsAgo_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.SecondsAgo
+  nameWithType: FollowerReadStaleness.SecondsAgo
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime
+  name: ToAsOfSystemTime()
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_ToAsOfSystemTime
+  commentId: M:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime()
+  nameWithType: FollowerReadStaleness.ToAsOfSystemTime()
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime*
+  name: ToAsOfSystemTime
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_ToAsOfSystemTime_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.ToAsOfSystemTime
+  nameWithType: FollowerReadStaleness.ToAsOfSystemTime
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds
+  name: TotalSeconds
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_TotalSeconds
+  commentId: P:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds
+  nameWithType: FollowerReadStaleness.TotalSeconds
+- uid: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds*
+  name: TotalSeconds
+  href: api/CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.html#CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_TotalSeconds_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness.TotalSeconds
+  nameWithType: FollowerReadStaleness.TotalSeconds
 - uid: CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute
   name: GlobalTableAttribute
   href: api/CockroachDB.DotNet.Abstractions.Attributes.GlobalTableAttribute.html
@@ -3491,6 +3659,19 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Region
   nameWithType: CockroachDBContext.Region
+- uid: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness
+  name: Staleness
+  href: api/CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.html#CockroachDB_DotNet_Abstractions_Pipeline_CockroachDBContext_Staleness
+  commentId: P:CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness
+  fullName: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness
+  nameWithType: CockroachDBContext.Staleness
+- uid: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness*
+  name: Staleness
+  href: api/CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.html#CockroachDB_DotNet_Abstractions_Pipeline_CockroachDBContext_Staleness_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.Staleness
+  nameWithType: CockroachDBContext.Staleness
 - uid: CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.UseFollowerRead
   name: UseFollowerRead
   href: api/CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext.html#CockroachDB_DotNet_Abstractions_Pipeline_CockroachDBContext_UseFollowerRead
@@ -3672,6 +3853,15 @@ references:
   fullName.vb: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(System.Func(Of System.Threading.Tasks.Task))
   nameWithType: ICockroachDBTemplate.ExecuteFollowerReadAsync(Func<Task>)
   nameWithType.vb: ICockroachDBTemplate.ExecuteFollowerReadAsync(Func(Of Task))
+- uid: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(System.Func{System.Threading.Tasks.Task},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: ExecuteFollowerReadAsync(Func<Task>, FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.html#CockroachDB_DotNet_Abstractions_Template_ICockroachDBTemplate_ExecuteFollowerReadAsync_System_Func_System_Threading_Tasks_Task__CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(System.Func{System.Threading.Tasks.Task},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name.vb: ExecuteFollowerReadAsync(Func(Of Task), FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(System.Func<System.Threading.Tasks.Task>, CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName.vb: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(System.Func(Of System.Threading.Tasks.Task), CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: ICockroachDBTemplate.ExecuteFollowerReadAsync(Func<Task>, FollowerReadStaleness)
+  nameWithType.vb: ICockroachDBTemplate.ExecuteFollowerReadAsync(Func(Of Task), FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync*
   name: ExecuteFollowerReadAsync
   href: api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.html#CockroachDB_DotNet_Abstractions_Template_ICockroachDBTemplate_ExecuteFollowerReadAsync_
@@ -3688,6 +3878,15 @@ references:
   fullName.vb: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)))
   nameWithType: ICockroachDBTemplate.ExecuteFollowerReadAsync<T>(Func<Task<T>>)
   nameWithType.vb: ICockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)))
+- uid: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: ExecuteFollowerReadAsync<T>(Func<Task<T>>, FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.html#CockroachDB_DotNet_Abstractions_Template_ICockroachDBTemplate_ExecuteFollowerReadAsync__1_System_Func_System_Threading_Tasks_Task___0___CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name.vb: ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)), FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync<T>(System.Func<System.Threading.Tasks.Task<T>>, CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName.vb: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)), CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: ICockroachDBTemplate.ExecuteFollowerReadAsync<T>(Func<Task<T>>, FollowerReadStaleness)
+  nameWithType.vb: ICockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)), FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.ExecuteReadCommittedAsync*
   name: ExecuteReadCommittedAsync
   href: api/CockroachDB.DotNet.Abstractions.Template.ICockroachDBTemplate.html#CockroachDB_DotNet_Abstractions_Template_ICockroachDBTemplate_ExecuteReadCommittedAsync_
@@ -6865,12 +7064,31 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Current
   nameWithType: FollowerReadContext.Current
+- uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness
+  name: CurrentStaleness
+  href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadContext_CurrentStaleness
+  commentId: P:CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness
+  fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness
+  nameWithType: FollowerReadContext.CurrentStaleness
+- uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness*
+  name: CurrentStaleness
+  href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadContext_CurrentStaleness_
+  commentId: Overload:CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.CurrentStaleness
+  nameWithType: FollowerReadContext.CurrentStaleness
 - uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped
   name: Scoped()
   href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadContext_Scoped
   commentId: M:CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped
   fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped()
   nameWithType: FollowerReadContext.Scoped()
+- uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: Scoped(FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadContext_Scoped_CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: FollowerReadContext.Scoped(FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.Scoped*
   name: Scoped
   href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadContext.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadContext_Scoped_
@@ -6884,15 +7102,15 @@ references:
   commentId: T:CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope
   fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope
   nameWithType: FollowerReadScope
-- uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.#ctor
-  name: FollowerReadScope()
-  href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadScope__ctor
-  commentId: M:CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.#ctor
-  name.vb: New()
-  fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.FollowerReadScope()
-  fullName.vb: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.New()
-  nameWithType: FollowerReadScope.FollowerReadScope()
-  nameWithType.vb: FollowerReadScope.New()
+- uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.#ctor(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: FollowerReadScope(FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadScope__ctor_CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.#ctor(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name.vb: New(FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.FollowerReadScope(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName.vb: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.New(CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: FollowerReadScope.FollowerReadScope(FollowerReadStaleness)
+  nameWithType.vb: FollowerReadScope.New(FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.#ctor*
   name: FollowerReadScope
   href: api/CockroachDB.DotNet.Core.FollowerRead.FollowerReadScope.html#CockroachDB_DotNet_Core_FollowerRead_FollowerReadScope__ctor_
@@ -7250,15 +7468,15 @@ references:
   commentId: T:CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware
   fullName: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware
   nameWithType: FollowerReadMiddleware
-- uid: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.#ctor(Npgsql.NpgsqlDataSource,CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware})
-  name: FollowerReadMiddleware(NpgsqlDataSource, ICockroachDBMetrics, ILogger<FollowerReadMiddleware>)
-  href: api/CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.html#CockroachDB_DotNet_Core_Middleware_FollowerReadMiddleware__ctor_Npgsql_NpgsqlDataSource_CockroachDB_DotNet_Abstractions_Metrics_ICockroachDBMetrics_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_FollowerReadMiddleware__
-  commentId: M:CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.#ctor(Npgsql.NpgsqlDataSource,CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware})
-  name.vb: New(NpgsqlDataSource, ICockroachDBMetrics, ILogger(Of FollowerReadMiddleware))
-  fullName: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.FollowerReadMiddleware(Npgsql.NpgsqlDataSource, CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics, Microsoft.Extensions.Logging.ILogger<CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware>)
-  fullName.vb: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.New(Npgsql.NpgsqlDataSource, CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics, Microsoft.Extensions.Logging.ILogger(Of CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware))
-  nameWithType: FollowerReadMiddleware.FollowerReadMiddleware(NpgsqlDataSource, ICockroachDBMetrics, ILogger<FollowerReadMiddleware>)
-  nameWithType.vb: FollowerReadMiddleware.New(NpgsqlDataSource, ICockroachDBMetrics, ILogger(Of FollowerReadMiddleware))
+- uid: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.#ctor(CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware})
+  name: FollowerReadMiddleware(ICockroachDBMetrics, ILogger<FollowerReadMiddleware>)
+  href: api/CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.html#CockroachDB_DotNet_Core_Middleware_FollowerReadMiddleware__ctor_CockroachDB_DotNet_Abstractions_Metrics_ICockroachDBMetrics_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_FollowerReadMiddleware__
+  commentId: M:CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.#ctor(CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware})
+  name.vb: New(ICockroachDBMetrics, ILogger(Of FollowerReadMiddleware))
+  fullName: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.FollowerReadMiddleware(CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics, Microsoft.Extensions.Logging.ILogger<CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware>)
+  fullName.vb: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.New(CockroachDB.DotNet.Abstractions.Metrics.ICockroachDBMetrics, Microsoft.Extensions.Logging.ILogger(Of CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware))
+  nameWithType: FollowerReadMiddleware.FollowerReadMiddleware(ICockroachDBMetrics, ILogger<FollowerReadMiddleware>)
+  nameWithType.vb: FollowerReadMiddleware.New(ICockroachDBMetrics, ILogger(Of FollowerReadMiddleware))
 - uid: CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.#ctor*
   name: FollowerReadMiddleware
   href: api/CockroachDB.DotNet.Core.Middleware.FollowerReadMiddleware.html#CockroachDB_DotNet_Core_Middleware_FollowerReadMiddleware__ctor_
@@ -7651,6 +7869,15 @@ references:
   fullName.vb: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(System.Func(Of System.Threading.Tasks.Task))
   nameWithType: CockroachDBTemplate.ExecuteFollowerReadAsync(Func<Task>)
   nameWithType.vb: CockroachDBTemplate.ExecuteFollowerReadAsync(Func(Of Task))
+- uid: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(System.Func{System.Threading.Tasks.Task},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: ExecuteFollowerReadAsync(Func<Task>, FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.html#CockroachDB_DotNet_Core_Template_CockroachDBTemplate_ExecuteFollowerReadAsync_System_Func_System_Threading_Tasks_Task__CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(System.Func{System.Threading.Tasks.Task},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name.vb: ExecuteFollowerReadAsync(Func(Of Task), FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(System.Func<System.Threading.Tasks.Task>, CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName.vb: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(System.Func(Of System.Threading.Tasks.Task), CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: CockroachDBTemplate.ExecuteFollowerReadAsync(Func<Task>, FollowerReadStaleness)
+  nameWithType.vb: CockroachDBTemplate.ExecuteFollowerReadAsync(Func(Of Task), FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync*
   name: ExecuteFollowerReadAsync
   href: api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.html#CockroachDB_DotNet_Core_Template_CockroachDBTemplate_ExecuteFollowerReadAsync_
@@ -7667,6 +7894,15 @@ references:
   fullName.vb: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)))
   nameWithType: CockroachDBTemplate.ExecuteFollowerReadAsync<T>(Func<Task<T>>)
   nameWithType.vb: CockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)))
+- uid: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name: ExecuteFollowerReadAsync<T>(Func<Task<T>>, FollowerReadStaleness)
+  href: api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.html#CockroachDB_DotNet_Core_Template_CockroachDBTemplate_ExecuteFollowerReadAsync__1_System_Func_System_Threading_Tasks_Task___0___CockroachDB_DotNet_Abstractions_Attributes_FollowerReadStaleness_
+  commentId: M:CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  name.vb: ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)), FollowerReadStaleness)
+  fullName: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync<T>(System.Func<System.Threading.Tasks.Task<T>>, CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  fullName.vb: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)), CockroachDB.DotNet.Abstractions.Attributes.FollowerReadStaleness)
+  nameWithType: CockroachDBTemplate.ExecuteFollowerReadAsync<T>(Func<Task<T>>, FollowerReadStaleness)
+  nameWithType.vb: CockroachDBTemplate.ExecuteFollowerReadAsync(Of T)(Func(Of Task(Of T)), FollowerReadStaleness)
 - uid: CockroachDB.DotNet.Core.Template.CockroachDBTemplate.ExecuteReadCommittedAsync*
   name: ExecuteReadCommittedAsync
   href: api/CockroachDB.DotNet.Core.Template.CockroachDBTemplate.html#CockroachDB_DotNet_Core_Template_CockroachDBTemplate_ExecuteReadCommittedAsync_
