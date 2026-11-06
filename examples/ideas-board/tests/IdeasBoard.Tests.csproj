@@ -17,6 +17,8 @@
     <PackageReference Include="Xunit.SkippableFact" Version="1.5.23" />
     <PackageReference Include="CockroachDB.DotNet.Testing" Version="0.1.2" />
     <PackageReference Include="CockroachDB.DotNet.AI" Version="0.1.2" />
+    <!-- Fast, in-process unit tests (no Docker/cluster). See IdeaServiceUnitTests.cs. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.13" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.13" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.13" />
   </ItemGroup>
