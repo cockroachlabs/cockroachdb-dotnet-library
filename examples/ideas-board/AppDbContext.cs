@@ -21,6 +21,11 @@ public partial class AppDbContext(DbContextOptions<AppDbContext> options) : DbCo
 // missing tables), which is exactly the case against a running cluster.
 public partial class AppDbContext
 {
+    // Added for the multi-region demo. EF maps it (ApplyCockroachDBAnnotations reads
+    // its [RegionalByRow]/[CrdbRegion] attributes); the single-node tests never touch
+    // this table, so it has no effect there.
+    public DbSet<RegionalIdea> RegionalIdeas => Set<RegionalIdea>();
+
     public const string CreateTableSql =
         """
         CREATE TABLE IF NOT EXISTS "Ideas" (

@@ -1,3 +1,6 @@
+using CockroachDB.DotNet.AI;
+using CockroachDB.DotNet.AI.Extensions;
+using CockroachDB.DotNet.AI.VectorStore;
 using CockroachDB.DotNet.Cdc.Extensions;
 using CockroachDB.DotNet.Core.Extensions;
 using CockroachDB.DotNet.EntityFramework.Extensions;
@@ -45,6 +48,24 @@ builder.Services.AddChangefeedHandler<Idea, IdeaChangefeedHandler>();
 builder.Services.AddDbContextFactory<AppDbContext>(o => o.UseCockroachDB(connectionString));
 builder.Services.AddSingleton<IdeaService>();
 builder.Services.AddSingleton<IdeaReadService>();
+
+// tag::vector-register[]
+// Semantic search: register the AI services and a deterministic (model-free)
+// embedding generator, then a VECTOR store on a 3-dim column with an L2 vector
+// index. SemanticIdeaService stores precomputed embeddings and searches by raw
+// vector, so results are reproducible without any model.
+builder.Services.AddCockroachDBAI(builder.Configuration);
+builder.Services.AddSingleton<IEmbeddingGenerator, ZeroEmbeddingGenerator>();
+builder.Services.AddCockroachDBVectorStore(b => b
+    .WithDimensions(3)
+    .WithDistanceMetric(DistanceMetric.L2)
+    .WithInitializeSchema(true)
+    .WithCreateVectorIndex());
+builder.Services.AddSingleton<SemanticIdeaService>();
+// end::vector-register[]
+
+// Multi-region writes (meaningful only against a multi-region cluster).
+builder.Services.AddSingleton<RegionalIdeaService>();
 
 using var host = builder.Build();
 
