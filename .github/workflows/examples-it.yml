@@ -1,0 +1,38 @@
+name: examples-it
+
+# Runs the Ideas Board example's tests on GitHub-hosted runners, which ship with
+# Docker — so the Testcontainers integration tests spin up a real CockroachDB and
+# the tutorial's ITs (the 40001 concurrency proof, follower reads, metrics, vector
+# search) actually execute alongside the EF InMemory unit tests. The example
+# depends on the PUBLISHED CockroachDB.DotNet 0.1.2 packages from the Pages static
+# NuGet feed (see examples/ideas-board/NuGet.config), so this also proves the
+# released packages work end to end. The multi-region IT is a SkippableFact and
+# skips cleanly here (no multi-region cluster); set CRDB_MULTIREGION=true +
+# CRDB_URL to run it.
+on:
+  pull_request:
+    paths:
+      - 'examples/ideas-board/**'
+      - '.github/workflows/examples-it.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'examples/ideas-board/**'
+      - '.github/workflows/examples-it.yml'
+  workflow_dispatch:
+
+jobs:
+  ideas-board-it:
+    name: Ideas Board tests (Testcontainers)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Test (EF InMemory unit + real CockroachDB via Testcontainers)
+        working-directory: examples/ideas-board
+        env:
+          TESTCONTAINERS_RYUK_DISABLED: "true"
+        run: dotnet test -c Release --verbosity normal
