@@ -35,4 +35,6 @@ jobs:
         working-directory: examples/ideas-board
         env:
           TESTCONTAINERS_RYUK_DISABLED: "true"
-        run: dotnet test -c Release --verbosity normal
+        # The dir holds both ideas-board.sln and IdeasBoard.csproj, so name the
+        # solution explicitly (bare `dotnet test` errors: MSB1011).
+        run: dotnet test ideas-board.sln -c Release --verbosity normal
