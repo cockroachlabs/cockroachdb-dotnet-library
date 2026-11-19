@@ -33,9 +33,9 @@ public class IdeaService(
         // request READ COMMITTED, which CockroachDB honors and silently loses the update).
         await using var tx = await db.Database.BeginTransactionAsync(IsolationLevel.Serializable);
 
-        var idea = await db.Ideas.SingleAsync(i => i.Id == id); // <1>
-        idea.Votes++;                                           // <2>
-        await db.SaveChangesAsync();                            // <3>
+        var idea = await db.Ideas.SingleAsync(i => i.Id == id);
+        idea.Votes++;
+        await db.SaveChangesAsync();
         await tx.CommitAsync();
     }
     // end::plain[]
@@ -45,7 +45,7 @@ public class IdeaService(
     // 40001 and re-runs the whole lambda (fresh context + fresh transaction +
     // fresh read) until it commits, so no upvote is lost.
     public Task UpvoteAsync(Guid id) =>
-        crdb.ExecuteAsync(async () => // <1>
+        crdb.ExecuteAsync(async () =>
         {
             await using var db = await dbFactory.CreateDbContextAsync();
             await using var tx = await db.Database.BeginTransactionAsync(IsolationLevel.Serializable);
