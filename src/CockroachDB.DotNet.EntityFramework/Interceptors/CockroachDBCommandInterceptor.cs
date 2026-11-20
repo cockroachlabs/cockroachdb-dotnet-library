@@ -1,5 +1,4 @@
 using CockroachDB.DotNet.Core.FollowerRead;
-using CockroachDB.DotNet.Core.Region;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Data.Common;
 
@@ -45,18 +44,15 @@ public sealed class CockroachDBCommandInterceptor : DbCommandInterceptor
         return base.NonQueryExecutingAsync(command, eventData, result, cancellationToken);
     }
 
-    private static void ApplyRegionPrefix(DbCommand command)
+    // Internal for the region-homing unit test (teeth-check): asserts no
+    // `SET crdb_region` is ever prefixed. Region homing is done by the
+    // CrdbRegionSaveChangesInterceptor stamping the crdb_region column.
+    internal static void ApplyRegionPrefix(DbCommand command)
     {
         var prefix = "";
 
         if (FollowerReadContext.Current)
             prefix += $"SET TRANSACTION AS OF SYSTEM TIME {FollowerReadContext.CurrentStaleness.ToAsOfSystemTime()}; ";
-
-        if (RegionContext.Current is { Length: > 0 } region)
-        {
-            var safeRegion = region.Replace("'", "''");
-            prefix += $"SET crdb_region = '{safeRegion}'; ";
-        }
 
         if (prefix.Length > 0)
             command.CommandText = prefix + command.CommandText;
