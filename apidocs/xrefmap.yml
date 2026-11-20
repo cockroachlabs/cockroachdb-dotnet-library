@@ -7556,15 +7556,15 @@ references:
   commentId: T:CockroachDB.DotNet.Core.Middleware.RegionMiddleware
   fullName: CockroachDB.DotNet.Core.Middleware.RegionMiddleware
   nameWithType: RegionMiddleware
-- uid: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Npgsql.NpgsqlDataSource,Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})
-  name: RegionMiddleware(NpgsqlDataSource, IOptions<CockroachDBOptions>, IRegionResolver, ILogger<RegionMiddleware>)
-  href: api/CockroachDB.DotNet.Core.Middleware.RegionMiddleware.html#CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_Npgsql_NpgsqlDataSource_Microsoft_Extensions_Options_IOptions_CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions__CockroachDB_DotNet_Abstractions_Region_IRegionResolver_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_RegionMiddleware__
-  commentId: M:CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Npgsql.NpgsqlDataSource,Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})
-  name.vb: New(NpgsqlDataSource, IOptions(Of CockroachDBOptions), IRegionResolver, ILogger(Of RegionMiddleware))
-  fullName: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.RegionMiddleware(Npgsql.NpgsqlDataSource, Microsoft.Extensions.Options.IOptions<CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions>, CockroachDB.DotNet.Abstractions.Region.IRegionResolver, Microsoft.Extensions.Logging.ILogger<CockroachDB.DotNet.Core.Middleware.RegionMiddleware>)
-  fullName.vb: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.New(Npgsql.NpgsqlDataSource, Microsoft.Extensions.Options.IOptions(Of CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions), CockroachDB.DotNet.Abstractions.Region.IRegionResolver, Microsoft.Extensions.Logging.ILogger(Of CockroachDB.DotNet.Core.Middleware.RegionMiddleware))
-  nameWithType: RegionMiddleware.RegionMiddleware(NpgsqlDataSource, IOptions<CockroachDBOptions>, IRegionResolver, ILogger<RegionMiddleware>)
-  nameWithType.vb: RegionMiddleware.New(NpgsqlDataSource, IOptions(Of CockroachDBOptions), IRegionResolver, ILogger(Of RegionMiddleware))
+- uid: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})
+  name: RegionMiddleware(IOptions<CockroachDBOptions>, IRegionResolver, ILogger<RegionMiddleware>)
+  href: api/CockroachDB.DotNet.Core.Middleware.RegionMiddleware.html#CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_Microsoft_Extensions_Options_IOptions_CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions__CockroachDB_DotNet_Abstractions_Region_IRegionResolver_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_RegionMiddleware__
+  commentId: M:CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})
+  name.vb: New(IOptions(Of CockroachDBOptions), IRegionResolver, ILogger(Of RegionMiddleware))
+  fullName: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.RegionMiddleware(Microsoft.Extensions.Options.IOptions<CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions>, CockroachDB.DotNet.Abstractions.Region.IRegionResolver, Microsoft.Extensions.Logging.ILogger<CockroachDB.DotNet.Core.Middleware.RegionMiddleware>)
+  fullName.vb: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.New(Microsoft.Extensions.Options.IOptions(Of CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions), CockroachDB.DotNet.Abstractions.Region.IRegionResolver, Microsoft.Extensions.Logging.ILogger(Of CockroachDB.DotNet.Core.Middleware.RegionMiddleware))
+  nameWithType: RegionMiddleware.RegionMiddleware(IOptions<CockroachDBOptions>, IRegionResolver, ILogger<RegionMiddleware>)
+  nameWithType.vb: RegionMiddleware.New(IOptions(Of CockroachDBOptions), IRegionResolver, ILogger(Of RegionMiddleware))
 - uid: CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor*
   name: RegionMiddleware
   href: api/CockroachDB.DotNet.Core.Middleware.RegionMiddleware.html#CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_
@@ -8045,6 +8045,44 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CockroachDBCommandInterceptor.ReaderExecutingAsync
   nameWithType: CockroachDBCommandInterceptor.ReaderExecutingAsync
+- uid: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor
+  name: CrdbRegionSaveChangesInterceptor
+  href: api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html
+  commentId: T:CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor
+  fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor
+  nameWithType: CrdbRegionSaveChangesInterceptor
+- uid: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult{System.Int32})
+  name: SavingChanges(DbContextEventData, InterceptionResult<int>)
+  href: api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html#CockroachDB_DotNet_EntityFramework_Interceptors_CrdbRegionSaveChangesInterceptor_SavingChanges_Microsoft_EntityFrameworkCore_Diagnostics_DbContextEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_System_Int32__
+  commentId: M:CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult{System.Int32})
+  name.vb: SavingChanges(DbContextEventData, InterceptionResult(Of Integer))
+  fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult<int>)
+  fullName.vb: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult(Of Integer))
+  nameWithType: CrdbRegionSaveChangesInterceptor.SavingChanges(DbContextEventData, InterceptionResult<int>)
+  nameWithType.vb: CrdbRegionSaveChangesInterceptor.SavingChanges(DbContextEventData, InterceptionResult(Of Integer))
+- uid: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges*
+  name: SavingChanges
+  href: api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html#CockroachDB_DotNet_EntityFramework_Interceptors_CrdbRegionSaveChangesInterceptor_SavingChanges_
+  commentId: Overload:CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChanges
+  nameWithType: CrdbRegionSaveChangesInterceptor.SavingChanges
+- uid: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult{System.Int32},System.Threading.CancellationToken)
+  name: SavingChangesAsync(DbContextEventData, InterceptionResult<int>, CancellationToken)
+  href: api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html#CockroachDB_DotNet_EntityFramework_Interceptors_CrdbRegionSaveChangesInterceptor_SavingChangesAsync_Microsoft_EntityFrameworkCore_Diagnostics_DbContextEventData_Microsoft_EntityFrameworkCore_Diagnostics_InterceptionResult_System_Int32__System_Threading_CancellationToken_
+  commentId: M:CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData,Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult{System.Int32},System.Threading.CancellationToken)
+  name.vb: SavingChangesAsync(DbContextEventData, InterceptionResult(Of Integer), CancellationToken)
+  fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult<int>, System.Threading.CancellationToken)
+  fullName.vb: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync(Microsoft.EntityFrameworkCore.Diagnostics.DbContextEventData, Microsoft.EntityFrameworkCore.Diagnostics.InterceptionResult(Of Integer), System.Threading.CancellationToken)
+  nameWithType: CrdbRegionSaveChangesInterceptor.SavingChangesAsync(DbContextEventData, InterceptionResult<int>, CancellationToken)
+  nameWithType.vb: CrdbRegionSaveChangesInterceptor.SavingChangesAsync(DbContextEventData, InterceptionResult(Of Integer), CancellationToken)
+- uid: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync*
+  name: SavingChangesAsync
+  href: api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html#CockroachDB_DotNet_EntityFramework_Interceptors_CrdbRegionSaveChangesInterceptor_SavingChangesAsync_
+  commentId: Overload:CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.SavingChangesAsync
+  nameWithType: CrdbRegionSaveChangesInterceptor.SavingChangesAsync
 - uid: CockroachDB.DotNet.EntityFramework.Migrations
   name: CockroachDB.DotNet.EntityFramework.Migrations
   href: api/CockroachDB.DotNet.EntityFramework.Migrations.html

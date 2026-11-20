@@ -89,7 +89,7 @@
 
 
   <h1 id="CockroachDB_DotNet_Core_Middleware_RegionMiddleware" data-uid="CockroachDB.DotNet.Core.Middleware.RegionMiddleware" class="text-break">
-Class RegionMiddleware  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class RegionMiddleware  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,22 +157,20 @@ Class RegionMiddleware  <a class="header-action link-secondary" title="View sour
 
   <a id="CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_" data-uid="CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor*"></a>
 
-  <h3 id="CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_Npgsql_NpgsqlDataSource_Microsoft_Extensions_Options_IOptions_CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions__CockroachDB_DotNet_Abstractions_Region_IRegionResolver_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_RegionMiddleware__" data-uid="CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Npgsql.NpgsqlDataSource,Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})">
-  RegionMiddleware(NpgsqlDataSource, IOptions&lt;CockroachDBOptions&gt;, IRegionResolver, ILogger&lt;RegionMiddleware&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CockroachDB_DotNet_Core_Middleware_RegionMiddleware__ctor_Microsoft_Extensions_Options_IOptions_CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions__CockroachDB_DotNet_Abstractions_Region_IRegionResolver_Microsoft_Extensions_Logging_ILogger_CockroachDB_DotNet_Core_Middleware_RegionMiddleware__" data-uid="CockroachDB.DotNet.Core.Middleware.RegionMiddleware.#ctor(Microsoft.Extensions.Options.IOptions{CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions},CockroachDB.DotNet.Abstractions.Region.IRegionResolver,Microsoft.Extensions.Logging.ILogger{CockroachDB.DotNet.Core.Middleware.RegionMiddleware})">
+  RegionMiddleware(IOptions&lt;CockroachDBOptions&gt;, IRegionResolver, ILogger&lt;RegionMiddleware&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RegionMiddleware(NpgsqlDataSource dataSource, IOptions&lt;CockroachDBOptions&gt; options, IRegionResolver regionResolver, ILogger&lt;RegionMiddleware&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public RegionMiddleware(IOptions&lt;CockroachDBOptions&gt; options, IRegionResolver regionResolver, ILogger&lt;RegionMiddleware&gt; logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>dataSource</code> <span class="xref">NpgsqlDataSource</span></dt>
-    <dd></dd>
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.html">CockroachDBOptions</a>&gt;</dt>
     <dd></dd>
     <dt><code>regionResolver</code> <a class="xref" href="CockroachDB.DotNet.Abstractions.Region.IRegionResolver.html">IRegionResolver</a></dt>
@@ -200,7 +198,7 @@ Class RegionMiddleware  <a class="header-action link-secondary" title="View sour
 
   <h3 id="CockroachDB_DotNet_Core_Middleware_RegionMiddleware_ExecuteAsync__1_CockroachDB_DotNet_Abstractions_Pipeline_CockroachDBContext_System_Func_CockroachDB_DotNet_Abstractions_Pipeline_CockroachDBContext_System_Threading_Tasks_Task___0___" data-uid="CockroachDB.DotNet.Core.Middleware.RegionMiddleware.ExecuteAsync``1(CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext,System.Func{CockroachDB.DotNet.Abstractions.Pipeline.CockroachDBContext,System.Threading.Tasks.Task{``0}})">
   ExecuteAsync&lt;T&gt;(CockroachDBContext, Func&lt;CockroachDBContext, Task&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/cockroachlabs/cockroachdb-dotnet-library/blob/main/src/CockroachDB.DotNet.Core/Middleware/RegionMiddleware.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

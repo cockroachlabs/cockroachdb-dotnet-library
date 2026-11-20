@@ -2463,6 +2463,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Interceptors.CrdbRegionSaveChangesInterceptor.yml\" sourcestartlinenumber=\"1\">Homes REGIONAL BY ROW rows by stamping the <code>crdb_region</code> column from the\nambient <xref href=\"CockroachDB.DotNet.Core.Region.RegionContext\" data-throw-if-not-resolved=\"false\"></xref> on INSERT. CockroachDB has no\n<code>crdb_region</code> session variable, so a row is homed by writing the column —\nnot with <code>SET</code>. The region flows in from <code>InRegion(...)</code> (via\n<code>RegionMiddleware</code>) or an explicit <xref href=\"CockroachDB.DotNet.Core.Region.RegionContext.Scoped(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\nNo-op when no region is scoped or the entity has no <code>[CrdbRegion]</code>\nproperty. Added entities only — updates never silently relocate existing rows.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Interceptors.yml",
       "output": {
         ".html": {
