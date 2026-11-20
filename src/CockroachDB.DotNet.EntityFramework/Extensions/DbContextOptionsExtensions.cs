@@ -19,6 +19,7 @@ public static class DbContextOptionsExtensions
         optionsBuilder
             .UseNpgsql(connectionString)
             .AddInterceptors(new CockroachDBCommandInterceptor())
+            .AddInterceptors(new CrdbRegionSaveChangesInterceptor())
             .ReplaceService<IMigrationsSqlGenerator, CockroachDBMigrationsSqlGenerator>()
             .ReplaceService<IHistoryRepository, CockroachDBHistoryRepository>();
 
@@ -34,6 +35,7 @@ public static class DbContextOptionsExtensions
     {
         optionsBuilder
             .AddInterceptors(new CockroachDBCommandInterceptor())
+            .AddInterceptors(new CrdbRegionSaveChangesInterceptor())
             .ReplaceService<IMigrationsSqlGenerator, CockroachDBMigrationsSqlGenerator>()
             .ReplaceService<IHistoryRepository, CockroachDBHistoryRepository>();
 
