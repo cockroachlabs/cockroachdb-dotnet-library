@@ -8,9 +8,11 @@ namespace IdeasBoard;
 /// Region-scoped writes for REGIONAL BY ROW ideas. Each write is routed through the
 /// template's <c>InRegion(region)</c> execution (which flows the region through the
 /// pipeline's RegionMiddleware), and <see cref="RegionContext"/> is scoped so the EF
-/// command interceptor prepends <c>SET crdb_region</c>. The row itself is pinned by
-/// its <c>crdb_region</c> column (the <c>[CrdbRegion]</c> property). This only does
-/// anything meaningful on a multi-region cluster.
+/// <c>CrdbRegionSaveChangesInterceptor</c> stamps the row's <c>crdb_region</c> column
+/// (the <c>[CrdbRegion]</c> property) on insert — that column is what pins the row to
+/// a region. CockroachDB has no <c>crdb_region</c> session variable, so homing is done
+/// by the column, never with <c>SET</c>. This only does anything meaningful on a
+/// multi-region cluster.
 /// </summary>
 // tag::inregion-usage[]
 public sealed class RegionalIdeaService(
@@ -18,8 +20,8 @@ public sealed class RegionalIdeaService(
     ICockroachDBTemplate crdb)
 {
     // Write an idea pinned to a region. InRegion(...) scopes the unit of work to the
-    // region; RegionContext.Scoped makes the EF interceptor emit SET crdb_region; and
-    // the entity's Region column records where the row lives.
+    // region; RegionContext.Scoped makes the EF save-changes interceptor stamp the
+    // crdb_region column — we do NOT set Region by hand, the library homes the row.
     public Task<Guid> AddIdeaInRegionAsync(string region, string text) =>
         crdb.InRegion(region).ExecuteAsync(async () =>
         {
@@ -30,7 +32,6 @@ public sealed class RegionalIdeaService(
                 Id = Guid.NewGuid(),
                 Text = text,
                 Votes = 0,
-                Region = region,
             };
             db.RegionalIdeas.Add(idea);
             await db.SaveChangesAsync();

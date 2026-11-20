@@ -3,7 +3,7 @@
   <PropertyGroup>
     <RootNamespace>CockroachDB.DotNet.Demo</RootNamespace>
     <IsPackable>false</IsPackable>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
   </PropertyGroup>
 
   <ItemGroup>

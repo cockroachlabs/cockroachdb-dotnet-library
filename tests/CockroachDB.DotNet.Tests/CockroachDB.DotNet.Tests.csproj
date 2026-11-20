@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\CockroachDB.DotNet.Core\CockroachDB.DotNet.Core.csproj" />
     <ProjectReference Include="..\..\src\CockroachDB.DotNet.AI\CockroachDB.DotNet.AI.csproj" />
+    <ProjectReference Include="..\..\src\CockroachDB.DotNet.EntityFramework\CockroachDB.DotNet.EntityFramework.csproj" />
     <ProjectReference Include="..\..\src\CockroachDB.DotNet.Testing\CockroachDB.DotNet.Testing.csproj" />
   </ItemGroup>
 
