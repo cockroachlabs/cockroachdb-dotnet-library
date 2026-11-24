@@ -242,6 +242,36 @@ public class Order
 public class Product { /* ... */ }
 ```
 
+#### Checking tables against the attributes
+
+Register a startup check that compares your `[GlobalTable]` / `[RegionalByRow]` /
+`[CrdbRegion]` attributes against the live CockroachDB schema and database multi-region
+configuration, reporting every mismatch with fix-up SQL:
+
+```csharp
+builder.Services.AddCockroachDB(builder.Configuration);
+builder.Services.AddDbContext<AppDbContext>(o => o.UseCockroachDB(connectionString));
+builder.Services.AddCockroachDBMultiRegionCheck<AppDbContext>();
+```
+
+It only reads (never alters the schema), uses `SHOW` + `information_schema`, quotes keyword
+identifiers, and skips quietly when the database is not CockroachDB. It checks both directions:
+an annotated entity must match its table's locality, and a table that is `GLOBAL` or
+`REGIONAL BY ROW` without the matching attribute is reported too.
+
+Behaviour is set by `CockroachDB:MultiRegion:Mode` (default `Warn`):
+
+| Mode | Behaviour |
+|------|-----------|
+| `None` | Check is off. |
+| `Warn` | Mismatches are logged; a **contradiction** still fails startup. |
+| `Validate` | Any mismatch fails startup. |
+
+A contradiction -- `[GlobalTable]` on a `REGIONAL BY ROW` table (or the reverse), or an entity
+carrying both attributes -- fails startup in every mode but `None`, because the attributes and the
+schema disagree about where rows live. The check is opt-in, so it never changes startup behaviour
+for apps that do not register it.
+
 ### CDC (Change Data Capture)
 
 Listen for changefeed events via webhooks:
@@ -649,6 +679,9 @@ Full `appsettings.json` configuration:
     },
     "Metrics": {
       "Enabled": true
+    },
+    "MultiRegion": {
+      "Mode": "Warn"
     },
     "AI": {
       "Enabled": true,
