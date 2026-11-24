@@ -3,9 +3,12 @@ using CockroachDB.DotNet.Abstractions.Attributes;
 namespace IdeasBoard;
 
 // tag::regional-entity[]
+// tag::mr-check-entity[]
 // A REGIONAL BY ROW idea. ApplyCockroachDBAnnotations() reads [RegionalByRow] and
 // annotates the table; [CrdbRegion] maps the Region property to the hidden
 // crdb_region column, so each row is pinned to the region stored in that column.
+// These are the same attributes the startup multi-region check compares against the
+// live schema ([GlobalTable] is the third it understands).
 [RegionalByRow(DefaultRegion = "us-east1")]
 public partial class RegionalIdea
 {
@@ -18,6 +21,7 @@ public partial class RegionalIdea
     [CrdbRegion]
     public string Region { get; set; } = "";
 }
+// end::mr-check-entity[]
 // end::regional-entity[]
 
 public partial class RegionalIdea

@@ -43,9 +43,13 @@ builder.Services.AddCockroachDBCdc();
 builder.Services.AddChangefeedHandler<Idea, IdeaChangefeedHandler>();
 // end::cdc-register[]
 
+// tag::mr-check-usage[]
 // A factory, not a scoped DbContext: the concurrency runner hits the service
 // from many threads at once, and each needs its own (non-thread-safe) context.
-builder.Services.AddDbContextFactory<AppDbContext>(o => o.UseCockroachDB(connectionString));
+// AddCockroachDBDbContextFactory wraps AddDbContextFactory AND turns the startup
+// multi-region check ON BY DEFAULT (mode from CockroachDB:MultiRegion:Mode, below).
+builder.Services.AddCockroachDBDbContextFactory<AppDbContext>(o => o.UseCockroachDB(connectionString));
+// end::mr-check-usage[]
 builder.Services.AddSingleton<IdeaService>();
 builder.Services.AddSingleton<IdeaReadService>();
 
