@@ -242,6 +242,49 @@ public class Order
 public class Product { /* ... */ }
 ```
 
+#### Checking tables against the attributes
+
+On their own, `[GlobalTable]` and `[RegionalByRow]` don't change the schema, so a migration that
+forgot `ALTER TABLE ... SET LOCALITY`, or a database that was never made multi-region, goes
+unnoticed. Registering a context through the EF-layer `AddCockroachDBDbContext` /
+`AddCockroachDBDbContextFactory` helpers turns on a startup check **on by default** (like the Spring
+starter, which gates its autoconfig on Hibernate being present) that compares your `[GlobalTable]` /
+`[RegionalByRow]` / `[CrdbRegion]` attributes against the live CockroachDB schema and database
+multi-region configuration, reporting every mismatch with fix-up SQL. It runs for every registered
+EF Core `DbContext` -- no explicit multi-region call is needed:
+
+```csharp
+builder.Services.AddCockroachDB(builder.Configuration);
+// Use the EF-layer helper instead of AddDbContext: this registers the context AND turns on the check.
+builder.Services.AddCockroachDBDbContext<AppDbContext>(o => o.UseCockroachDB(connectionString));
+// (AddCockroachDBDbContextFactory<AppDbContext> is the factory equivalent.)
+```
+
+The check lives in the EF integration, so an application that uses only the raw Core/Npgsql pipeline
+(no EF Core) pulls no EF Core dependency and gets no check -- it has no entity model to check.
+
+It only reads (never alters the schema), uses `SHOW` + `information_schema`, quotes keyword
+identifiers, and skips quietly when no context is registered or the database is not CockroachDB. It
+checks both directions: an annotated entity must match its table's locality, and a table that is
+`GLOBAL` or `REGIONAL BY ROW` without the matching attribute is reported too.
+
+Behaviour is set by `CockroachDB:MultiRegion:Mode` (default `Warn`):
+
+| Mode | Behaviour |
+|------|-----------|
+| `None` | Check is off. |
+| `Warn` | Mismatches are logged; a **contradiction** still fails startup. |
+| `Validate` | Any mismatch fails startup. |
+
+A contradiction -- `[GlobalTable]` on a `REGIONAL BY ROW` table (or the reverse), or an entity
+carrying both attributes -- fails startup in every mode but `None`, because the attributes and the
+schema disagree about where rows live. Set `CockroachDB:MultiRegion:Mode=none` to turn the check off
+entirely (for example in tests), or `Validate` to make every mismatch fail startup (for example in
+CI).
+
+If you register a context with plain `AddDbContext`, call `AddCockroachDBMultiRegionCheck()` once to
+turn the check on; it is a no-op-safe explicit opt-in.
+
 ### CDC (Change Data Capture)
 
 Listen for changefeed events via webhooks:
@@ -649,6 +692,9 @@ Full `appsettings.json` configuration:
     },
     "Metrics": {
       "Enabled": true
+    },
+    "MultiRegion": {
+      "Mode": "Warn"
     },
     "AI": {
       "Enabled": true,

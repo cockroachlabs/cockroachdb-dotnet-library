@@ -4,6 +4,29 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **Startup multi-region check, on by default for EF users.** The EF-layer helpers
+  `services.AddCockroachDBDbContext<TContext>(...)` and
+  `services.AddCockroachDBDbContextFactory<TContext>(...)` register a context and turn on the check
+  automatically (mirroring the Spring starter, which gates its autoconfig on Hibernate being present);
+  no explicit multi-region call is required. The check lives entirely in the EntityFramework package,
+  so `CockroachDB.DotNet.Core` takes **no** EF Core dependency and raw Core/Npgsql consumers get no
+  check. It discovers every registered EF Core `DbContext` from DI at startup and compares each
+  context's `[GlobalTable]` / `[RegionalByRow]` / `[CrdbRegion]` attributes against the live
+  CockroachDB schema and database multi-region config, logging mismatches with fix-up SQL
+  (`ALTER DATABASE ... SET PRIMARY REGION/ADD REGION`, `ALTER TABLE ... SET LOCALITY ...`). Reads only
+  (never mutates the schema), uses `SHOW` + `information_schema` (avoids `crdb_internal`), quotes
+  keyword identifiers, and skips quietly when no context is registered or the database is not
+  CockroachDB.
+  Behaviour is driven by `CockroachDB:MultiRegion:Mode` (`MultiRegionOptions.Mode`), default `Warn`.
+  A **contradiction** (an entity whose attribute names one locality while its table has the other, or
+  an entity carrying both attributes) fails startup even in `Warn`; `Validate` fails startup on any
+  mismatch; `CockroachDB:MultiRegion:Mode=none` turns the check off entirely.
+  `services.AddCockroachDBMultiRegionCheck()` (and its `<TContext>` overload) is kept as a no-op-safe
+  explicit opt-in for contexts registered with plain `AddDbContext`.
+
 ## [0.1.2] - 2026-10-28
 
 Follower reads can now target a specific staleness, and a bug that caused the

@@ -11,6 +11,26 @@ public sealed class CockroachDBOptions
     public MetricsOptions Metrics { get; set; } = new();
 
     public CircuitBreakerOptions CircuitBreaker { get; set; } = new();
+
+    public MultiRegionOptions MultiRegion { get; set; } = new();
+}
+
+public sealed class MultiRegionOptions
+{
+    /// <summary>
+    /// How the startup multi-region check behaves. Defaults to <see cref="MultiRegionCheckMode.Warn"/>:
+    /// mismatches are logged, but a contradiction (an entity whose annotation names one locality while
+    /// its table has the other, or an entity carrying both annotations) fails startup even in warn.
+    /// <see cref="MultiRegionCheckMode.None"/> turns the check off entirely.
+    /// </summary>
+    public MultiRegionCheckMode Mode { get; set; } = MultiRegionCheckMode.Warn;
+}
+
+public enum MultiRegionCheckMode
+{
+    None,
+    Warn,
+    Validate
 }
 
 public sealed class RetryOptions
