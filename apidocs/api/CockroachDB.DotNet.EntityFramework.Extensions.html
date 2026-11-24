@@ -98,6 +98,15 @@ Classes
       <dt><a class="xref" href="CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions.html">DbContextOptionsExtensions</a></dt>
       <dd></dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html">MultiRegionServiceCollectionExtensions</a></dt>
+      <dd><p>EF-layer registration for CockroachDB. Registering a context through these helpers turns the
+startup multi-region check <b>on by default</b> (mirroring the Spring starter, which gates its
+autoconfig on Hibernate being present): the check lives in the EF integration, so an application
+that uses only the raw Core/Npgsql pipeline pulls no EF Core and gets no check — it has no entity
+model to check. <code>CockroachDB:MultiRegion:Mode=none</code> turns the check off.</p>
+</dd>
+    </dl>
 
 
 </article>

@@ -3122,6 +3122,19 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.Metrics
   nameWithType: CockroachDBOptions.Metrics
+- uid: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion
+  name: MultiRegion
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.html#CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions_MultiRegion
+  commentId: P:CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion
+  nameWithType: CockroachDBOptions.MultiRegion
+- uid: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion*
+  name: MultiRegion
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.html#CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions_MultiRegion_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.MultiRegion
+  nameWithType: CockroachDBOptions.MultiRegion
 - uid: CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.Region
   name: Region
   href: api/CockroachDB.DotNet.Abstractions.Configuration.CockroachDBOptions.html#CockroachDB_DotNet_Abstractions_Configuration_CockroachDBOptions_Region
@@ -3173,6 +3186,49 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.Abstractions.Configuration.MetricsOptions.Enabled
   nameWithType: MetricsOptions.Enabled
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode
+  name: MultiRegionCheckMode
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.html
+  commentId: T:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode
+  nameWithType: MultiRegionCheckMode
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.None
+  name: None
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.html#CockroachDB_DotNet_Abstractions_Configuration_MultiRegionCheckMode_None
+  commentId: F:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.None
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.None
+  nameWithType: MultiRegionCheckMode.None
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Validate
+  name: Validate
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.html#CockroachDB_DotNet_Abstractions_Configuration_MultiRegionCheckMode_Validate
+  commentId: F:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Validate
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Validate
+  nameWithType: MultiRegionCheckMode.Validate
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Warn
+  name: Warn
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.html#CockroachDB_DotNet_Abstractions_Configuration_MultiRegionCheckMode_Warn
+  commentId: F:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Warn
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.Warn
+  nameWithType: MultiRegionCheckMode.Warn
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions
+  name: MultiRegionOptions
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.html
+  commentId: T:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions
+  nameWithType: MultiRegionOptions
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode
+  name: Mode
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.html#CockroachDB_DotNet_Abstractions_Configuration_MultiRegionOptions_Mode
+  commentId: P:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode
+  nameWithType: MultiRegionOptions.Mode
+- uid: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode*
+  name: Mode
+  href: api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.html#CockroachDB_DotNet_Abstractions_Configuration_MultiRegionOptions_Mode_
+  commentId: Overload:CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.Mode
+  nameWithType: MultiRegionOptions.Mode
 - uid: CockroachDB.DotNet.Abstractions.Configuration.RegionOptions
   name: RegionOptions
   href: api/CockroachDB.DotNet.Abstractions.Configuration.RegionOptions.html
@@ -7969,6 +8025,66 @@ references:
   isSpec: "True"
   fullName: CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions.UseCockroachDB
   nameWithType: DbContextOptionsExtensions.UseCockroachDB
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions
+  name: MultiRegionServiceCollectionExtensions
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html
+  commentId: T:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions
+  nameWithType: MultiRegionServiceCollectionExtensions
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext*
+  name: AddCockroachDBDbContext
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBDbContext_
+  commentId: Overload:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory*
+  name: AddCockroachDBDbContextFactory
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBDbContextFactory_
+  commentId: Overload:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder})
+  name: AddCockroachDBDbContextFactory<TContext>(IServiceCollection, Action<DbContextOptionsBuilder>)
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBDbContextFactory__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder__
+  commentId: M:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder})
+  name.vb: AddCockroachDBDbContextFactory(Of TContext)(IServiceCollection, Action(Of DbContextOptionsBuilder))
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder>)
+  fullName.vb: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory(Of TContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder))
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory<TContext>(IServiceCollection, Action<DbContextOptionsBuilder>)
+  nameWithType.vb: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContextFactory(Of TContext)(IServiceCollection, Action(Of DbContextOptionsBuilder))
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder})
+  name: AddCockroachDBDbContext<TContext>(IServiceCollection, Action<DbContextOptionsBuilder>)
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBDbContext__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder__
+  commentId: M:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder})
+  name.vb: AddCockroachDBDbContext(Of TContext)(IServiceCollection, Action(Of DbContextOptionsBuilder))
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder>)
+  fullName.vb: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext(Of TContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder))
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext<TContext>(IServiceCollection, Action<DbContextOptionsBuilder>)
+  nameWithType.vb: MultiRegionServiceCollectionExtensions.AddCockroachDBDbContext(Of TContext)(IServiceCollection, Action(Of DbContextOptionsBuilder))
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddCockroachDBMultiRegionCheck(IServiceCollection)
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBMultiRegionCheck_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(IServiceCollection)
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck*
+  name: AddCockroachDBMultiRegionCheck
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBMultiRegionCheck_
+  commentId: Overload:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck
+  isSpec: "True"
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck
+- uid: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddCockroachDBMultiRegionCheck<TContext>(IServiceCollection)
+  href: api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html#CockroachDB_DotNet_EntityFramework_Extensions_MultiRegionServiceCollectionExtensions_AddCockroachDBMultiRegionCheck__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddCockroachDBMultiRegionCheck(Of TContext)(IServiceCollection)
+  fullName: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(Of TContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck<TContext>(IServiceCollection)
+  nameWithType.vb: MultiRegionServiceCollectionExtensions.AddCockroachDBMultiRegionCheck(Of TContext)(IServiceCollection)
 - uid: CockroachDB.DotNet.EntityFramework.Interceptors
   name: CockroachDB.DotNet.EntityFramework.Interceptors
   href: api/CockroachDB.DotNet.EntityFramework.Interceptors.html

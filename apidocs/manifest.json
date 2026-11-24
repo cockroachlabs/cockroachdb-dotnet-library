@@ -867,6 +867,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.MultiRegionCheckMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.Abstractions.Configuration.MultiRegionOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CockroachDB.DotNet.Abstractions.Configuration.RegionOptions.yml",
       "output": {
         ".html": {
@@ -2432,6 +2460,20 @@
       "IsMRef": true,
       "Title": "CockroachDB.DotNet.EntityFramework.Extensions.DbContextOptionsExtensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/CockroachDB.DotNet.EntityFramework.Extensions.MultiRegionServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">EF-layer registration for CockroachDB. Registering a context through these helpers turns the\nstartup multi-region check <b>on by default</b> (mirroring the Spring starter, which gates its\nautoconfig on Hibernate being present): the check lives in the EF integration, so an application\nthat uses only the raw Core/Npgsql pipeline pulls no EF Core and gets no check — it has no entity\nmodel to check. <code>CockroachDB:MultiRegion:Mode=none</code> turns the check off.</p>\n"
     },
     {
       "type": "ManagedReference",
