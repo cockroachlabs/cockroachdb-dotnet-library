@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// What the multi-region check reads from CockroachDB.

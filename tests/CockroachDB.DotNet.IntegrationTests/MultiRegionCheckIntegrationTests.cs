@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CockroachDB.DotNet.Abstractions.Attributes;
 using CockroachDB.DotNet.Abstractions.Configuration;
-using CockroachDB.DotNet.Core.MultiRegion;
+using CockroachDB.DotNet.EntityFramework.MultiRegion;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using Xunit;

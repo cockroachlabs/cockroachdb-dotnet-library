@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// Parses and quotes SQL identifiers the way CockroachDB treats them: unquoted names fold to

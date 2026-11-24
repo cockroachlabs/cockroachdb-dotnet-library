@@ -12,14 +12,15 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// Runs the multi-region check once at startup for <em>every</em> EF Core <see cref="DbContext"/>
 /// registered in the application, without the application naming a context. It is registered
-/// automatically by <c>AddCockroachDB</c> and mirrors the Spring starter's on-by-default behaviour:
-/// it defaults to <see cref="MultiRegionCheckMode.Warn"/>, and <c>CockroachDB:MultiRegion:Mode=none</c>
-/// turns it off entirely.
+/// automatically by the EF-layer <c>AddCockroachDBDbContext</c> / <c>AddCockroachDBDbContextFactory</c>
+/// helpers and mirrors the Spring starter's on-by-default behaviour: it defaults to
+/// <see cref="MultiRegionCheckMode.Warn"/>, and <c>CockroachDB:MultiRegion:Mode=none</c> turns it off
+/// entirely.
 ///
 /// <para>It discovers contexts from DI at runtime by looking for the <see cref="DbContextOptions{TContext}"/>
 /// registrations that both <c>AddDbContext</c> and <c>AddDbContextFactory</c> add, so it stays a quiet

@@ -8,11 +8,9 @@ using CockroachDB.DotNet.Core.Exceptions;
 using CockroachDB.DotNet.Core.Health;
 using CockroachDB.DotNet.Core.Metrics;
 using CockroachDB.DotNet.Core.Middleware;
-using CockroachDB.DotNet.Core.MultiRegion;
 using CockroachDB.DotNet.Core.Pipeline;
 using CockroachDB.DotNet.Core.Region;
 using CockroachDB.DotNet.Core.Template;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -52,35 +50,7 @@ public static class ServiceCollectionExtensions
         services.AddHealthChecks()
             .AddCheck<CockroachDBHealthCheck>("cockroachdb");
 
-        // On by default, like the Spring starter: check every registered EF Core context's
-        // [GlobalTable]/[RegionalByRow] attributes against the live schema at startup. It is a quiet
-        // no-op when no context is registered or the database is not CockroachDB, and
-        // CockroachDB:MultiRegion:Mode=none turns it off entirely.
-        AddMultiRegionCheck(services);
-
         return services;
-    }
-
-    /// <summary>
-    /// Registers the startup multi-region check explicitly. This is normally unnecessary:
-    /// <see cref="AddCockroachDB"/> already registers it on by default, for every EF Core
-    /// <see cref="DbContext"/> in the application. It is kept as a no-op-safe explicit opt-in;
-    /// calling it more than once, or alongside <see cref="AddCockroachDB"/>, registers the check once.
-    /// <typeparamref name="TContext"/> is accepted for intent; the check covers every registered context.
-    /// </summary>
-    public static IServiceCollection AddCockroachDBMultiRegionCheck<TContext>(this IServiceCollection services)
-        where TContext : DbContext
-    {
-        AddMultiRegionCheck(services);
-        return services;
-    }
-
-    private static void AddMultiRegionCheck(IServiceCollection services)
-    {
-        // The registry reads the live service collection at startup to discover contexts added after
-        // this call. AddHostedService de-duplicates by type, so repeated registration is harmless.
-        services.AddSingleton(new MultiRegionContextRegistry(services));
-        services.AddHostedService<MultiRegionStartupCheck>();
     }
 }
 

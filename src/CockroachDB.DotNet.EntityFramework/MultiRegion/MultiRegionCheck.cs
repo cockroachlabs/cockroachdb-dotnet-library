@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// Compares entities carrying <c>[GlobalTable]</c> / <c>[RegionalByRow]</c> / <c>[CrdbRegion]</c>

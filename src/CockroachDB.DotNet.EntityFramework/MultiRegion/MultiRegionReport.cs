@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Text;
 using CockroachDB.DotNet.Abstractions.Configuration;
 
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// The problems the multi-region check found, and SQL that fixes them. A contradiction (an

@@ -1,6 +1,6 @@
 using System;
 using CockroachDB.DotNet.Abstractions.Attributes;
-using CockroachDB.DotNet.Core.MultiRegion;
+using CockroachDB.DotNet.EntityFramework.MultiRegion;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 

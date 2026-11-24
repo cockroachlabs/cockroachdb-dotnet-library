@@ -1,4 +1,4 @@
-namespace CockroachDB.DotNet.Core.MultiRegion;
+namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
 
 /// <summary>
 /// The table of an entity, and what its <c>[GlobalTable]</c> or <c>[RegionalByRow]</c>

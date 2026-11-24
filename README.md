@@ -246,16 +246,22 @@ public class Product { /* ... */ }
 
 On their own, `[GlobalTable]` and `[RegionalByRow]` don't change the schema, so a migration that
 forgot `ALTER TABLE ... SET LOCALITY`, or a database that was never made multi-region, goes
-unnoticed. `AddCockroachDB` registers a startup check **on by default** (like the Spring starter)
-that compares your `[GlobalTable]` / `[RegionalByRow]` / `[CrdbRegion]` attributes against the live
-CockroachDB schema and database multi-region configuration, reporting every mismatch with fix-up SQL.
-It runs for every registered EF Core `DbContext` -- no extra call is needed:
+unnoticed. Registering a context through the EF-layer `AddCockroachDBDbContext` /
+`AddCockroachDBDbContextFactory` helpers turns on a startup check **on by default** (like the Spring
+starter, which gates its autoconfig on Hibernate being present) that compares your `[GlobalTable]` /
+`[RegionalByRow]` / `[CrdbRegion]` attributes against the live CockroachDB schema and database
+multi-region configuration, reporting every mismatch with fix-up SQL. It runs for every registered
+EF Core `DbContext` -- no explicit multi-region call is needed:
 
 ```csharp
 builder.Services.AddCockroachDB(builder.Configuration);
-builder.Services.AddDbContext<AppDbContext>(o => o.UseCockroachDB(connectionString));
-// The multi-region check now runs at startup automatically.
+// Use the EF-layer helper instead of AddDbContext: this registers the context AND turns on the check.
+builder.Services.AddCockroachDBDbContext<AppDbContext>(o => o.UseCockroachDB(connectionString));
+// (AddCockroachDBDbContextFactory<AppDbContext> is the factory equivalent.)
 ```
+
+The check lives in the EF integration, so an application that uses only the raw Core/Npgsql pipeline
+(no EF Core) pulls no EF Core dependency and gets no check -- it has no entity model to check.
 
 It only reads (never alters the schema), uses `SHOW` + `information_schema`, quotes keyword
 identifiers, and skips quietly when no context is registered or the database is not CockroachDB. It
@@ -276,8 +282,8 @@ schema disagree about where rows live. Set `CockroachDB:MultiRegion:Mode=none` t
 entirely (for example in tests), or `Validate` to make every mismatch fail startup (for example in
 CI).
 
-`AddCockroachDBMultiRegionCheck<AppDbContext>()` is kept as an explicit, no-op-safe opt-in; it is
-normally unnecessary because `AddCockroachDB` already registers the check.
+If you register a context with plain `AddDbContext`, call `AddCockroachDBMultiRegionCheck()` once to
+turn the check on; it is a no-op-safe explicit opt-in.
 
 ### CDC (Change Data Capture)
 
