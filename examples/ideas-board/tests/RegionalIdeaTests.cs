@@ -3,6 +3,7 @@ using CockroachDB.DotNet.EntityFramework.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Npgsql;
 using Xunit;
 
@@ -66,5 +67,44 @@ public class RegionalIdeaTests
         // The row was pinned to the region it was written in.
         Assert.Equal("us-east1", await svc.RegionOfAsync(id));
         // end::region-test[]
+    }
+
+    [SkippableFact]
+    public async Task MatchingSchema_BootsClean()
+    {
+        // tag::mr-check-report[]
+        // Same multi-region gate as above: only meaningful against a real cluster.
+        Skip.IfNot(Environment.GetEnvironmentVariable("CRDB_MULTIREGION") == "true",
+            "Set CRDB_MULTIREGION=true and CRDB_URL=<multi-region cluster> to run this test.");
+
+        var connectionString = Environment.GetEnvironmentVariable("CRDB_URL")
+            ?? throw new InvalidOperationException("CRDB_URL is required when CRDB_MULTIREGION=true.");
+
+        // Register the context with AddCockroachDBDbContextFactory<T>(): this turns the
+        // startup multi-region check ON BY DEFAULT (mode from CockroachDB:MultiRegion:Mode).
+        var builder = Host.CreateApplicationBuilder();
+        builder.Configuration.AddInMemoryCollection(new Dictionary<string, string?>
+        {
+            ["CockroachDB:MultiRegion:Mode"] = "warn",
+        });
+        builder.Services.AddSingleton(NpgsqlDataSource.Create(connectionString));
+        builder.Services.AddCockroachDB(builder.Configuration, pipeline => pipeline.UseRetry());
+        builder.Services.AddCockroachDBDbContextFactory<AppDbContext>(o => o.UseCockroachDB(connectionString));
+
+        using var host = builder.Build();
+
+        await using (var db = await host.Services
+            .GetRequiredService<IDbContextFactory<AppDbContext>>()
+            .CreateDbContextAsync())
+        {
+            await db.Database.ExecuteSqlRawAsync(AppDbContext.CreateTableSql);
+            await db.Database.ExecuteSqlRawAsync(RegionalIdea.CreateTableSql);
+        }
+
+        // StartAsync runs the hosted multi-region check. With a schema that matches the
+        // [RegionalByRow]/[CrdbRegion] annotations, the host boots without throwing.
+        await host.StartAsync();
+        await host.StopAsync();
+        // end::mr-check-report[]
     }
 }
