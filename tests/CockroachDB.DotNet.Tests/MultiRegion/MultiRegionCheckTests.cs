@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using CockroachDB.DotNet.Abstractions.Configuration;
-using CockroachDB.DotNet.EntityFramework.MultiRegion;
+using CockroachDB.DotNet.Core.MultiRegion;
 using Xunit;
 
 namespace CockroachDB.DotNet.Tests.MultiRegion;

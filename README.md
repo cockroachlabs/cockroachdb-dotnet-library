@@ -244,20 +244,23 @@ public class Product { /* ... */ }
 
 #### Checking tables against the attributes
 
-Register a startup check that compares your `[GlobalTable]` / `[RegionalByRow]` /
-`[CrdbRegion]` attributes against the live CockroachDB schema and database multi-region
-configuration, reporting every mismatch with fix-up SQL:
+On their own, `[GlobalTable]` and `[RegionalByRow]` don't change the schema, so a migration that
+forgot `ALTER TABLE ... SET LOCALITY`, or a database that was never made multi-region, goes
+unnoticed. `AddCockroachDB` registers a startup check **on by default** (like the Spring starter)
+that compares your `[GlobalTable]` / `[RegionalByRow]` / `[CrdbRegion]` attributes against the live
+CockroachDB schema and database multi-region configuration, reporting every mismatch with fix-up SQL.
+It runs for every registered EF Core `DbContext` -- no extra call is needed:
 
 ```csharp
 builder.Services.AddCockroachDB(builder.Configuration);
 builder.Services.AddDbContext<AppDbContext>(o => o.UseCockroachDB(connectionString));
-builder.Services.AddCockroachDBMultiRegionCheck<AppDbContext>();
+// The multi-region check now runs at startup automatically.
 ```
 
 It only reads (never alters the schema), uses `SHOW` + `information_schema`, quotes keyword
-identifiers, and skips quietly when the database is not CockroachDB. It checks both directions:
-an annotated entity must match its table's locality, and a table that is `GLOBAL` or
-`REGIONAL BY ROW` without the matching attribute is reported too.
+identifiers, and skips quietly when no context is registered or the database is not CockroachDB. It
+checks both directions: an annotated entity must match its table's locality, and a table that is
+`GLOBAL` or `REGIONAL BY ROW` without the matching attribute is reported too.
 
 Behaviour is set by `CockroachDB:MultiRegion:Mode` (default `Warn`):
 
@@ -269,8 +272,12 @@ Behaviour is set by `CockroachDB:MultiRegion:Mode` (default `Warn`):
 
 A contradiction -- `[GlobalTable]` on a `REGIONAL BY ROW` table (or the reverse), or an entity
 carrying both attributes -- fails startup in every mode but `None`, because the attributes and the
-schema disagree about where rows live. The check is opt-in, so it never changes startup behaviour
-for apps that do not register it.
+schema disagree about where rows live. Set `CockroachDB:MultiRegion:Mode=none` to turn the check off
+entirely (for example in tests), or `Validate` to make every mismatch fail startup (for example in
+CI).
+
+`AddCockroachDBMultiRegionCheck<AppDbContext>()` is kept as an explicit, no-op-safe opt-in; it is
+normally unnecessary because `AddCockroachDB` already registers the check.
 
 ### CDC (Change Data Capture)
 

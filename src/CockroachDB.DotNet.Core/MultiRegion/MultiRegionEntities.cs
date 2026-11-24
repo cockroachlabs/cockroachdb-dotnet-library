@@ -4,7 +4,7 @@ using CockroachDB.DotNet.Abstractions.Attributes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace CockroachDB.DotNet.EntityFramework.MultiRegion;
+namespace CockroachDB.DotNet.Core.MultiRegion;
 
 /// <summary>
 /// Lists every entity in an EF Core model with its table and multi-region attribute, if any.
