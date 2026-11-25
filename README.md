@@ -30,7 +30,7 @@ API reference: https://cockroachlabs.github.io/cockroachdb-dotnet-library/
 
 ### AI agents
 
-Coding agents working in an app that uses this library: see [`docs/agents/AGENTS.md`](docs/agents/AGENTS.md) — a short consumer guide to the helpers (use the pipeline's auto-retry, the `crdb_region` column, follower reads, force Serializable). It is bundled at the root of the `CockroachDB.DotNet.Core` nupkg.
+Coding agents working in an app that uses this library: see [`docs/agents/AGENTS.md`](docs/agents/AGENTS.md) — a short consumer guide to the helpers (use the pipeline's auto-retry, the `crdb_region` column, follower reads, force Serializable). It is published in **two places**: bundled at the root of the `CockroachDB.DotNet.Core` nupkg (a copy matching the version you installed), and on the site at [`/agents/AGENTS.md`](https://cockroachlabs.github.io/cockroachdb-dotnet-library/agents/AGENTS.md) (latest, tracking `main`; also pointed to by [`llms.txt`](https://cockroachlabs.github.io/cockroachdb-dotnet-library/llms.txt)). If the two disagree, trust the nupkg copy for the version you have.
 
 ## Architecture
 
