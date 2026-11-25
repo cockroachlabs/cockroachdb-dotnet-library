@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CockroachDB.DotNet.Core" Version="0.2.2" />
-    <PackageReference Include="CockroachDB.DotNet.EntityFramework" Version="0.2.2" />
-    <PackageReference Include="CockroachDB.DotNet.Cdc" Version="0.2.2" />
+    <PackageReference Include="CockroachDB.DotNet.Core" Version="0.2.1" />
+    <PackageReference Include="CockroachDB.DotNet.EntityFramework" Version="0.2.1" />
+    <PackageReference Include="CockroachDB.DotNet.Cdc" Version="0.2.1" />
     <!-- Vector / semantic search (AddCockroachDBAI, CockroachDBVectorStore). -->
-    <PackageReference Include="CockroachDB.DotNet.AI" Version="0.2.2" />
+    <PackageReference Include="CockroachDB.DotNet.AI" Version="0.2.1" />
     <!-- CockroachDBConcurrencyRunner lives in the Testing package. -->
-    <PackageReference Include="CockroachDB.DotNet.Testing" Version="0.2.2" />
+    <PackageReference Include="CockroachDB.DotNet.Testing" Version="0.2.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.13" />
   </ItemGroup>
 
