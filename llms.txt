@@ -1,0 +1,7 @@
+# CockroachDB .NET Library
+
+Guide for coding agents working in an app that depends on CockroachDB.DotNet.*:
+https://cockroachlabs.github.io/cockroachdb-dotnet-library/agents/AGENTS.md
+
+A copy that matches your package version is bundled at the root of the
+CockroachDB.DotNet.Core nupkg. If the two disagree, trust the nupkg copy.
