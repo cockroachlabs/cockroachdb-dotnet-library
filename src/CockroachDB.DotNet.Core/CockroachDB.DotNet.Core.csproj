@@ -4,8 +4,14 @@
     <RootNamespace>CockroachDB.DotNet.Core</RootNamespace>
     <PackageId>CockroachDB.DotNet.Core</PackageId>
     <Description>Core middleware pipeline, retry engine, circuit breaker, and region context for CockroachDB</Description>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
   </PropertyGroup>
+
+  <!-- Bake the consumer-facing agent guide into the .nupkg root so coding agents
+       working in a user's app discover it alongside the package. -->
+  <ItemGroup>
+    <None Include="..\..\docs\agents\AGENTS.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CockroachDB.DotNet.Abstractions\CockroachDB.DotNet.Abstractions.csproj" />

@@ -28,6 +28,10 @@ dotnet add package CockroachDB.DotNet.Core --version 0.2.0
 
 API reference: https://cockroachlabs.github.io/cockroachdb-dotnet-library/
 
+### AI agents
+
+Coding agents working in an app that uses this library: see [`docs/agents/AGENTS.md`](docs/agents/AGENTS.md) — a short consumer guide to the helpers (use the pipeline's auto-retry, the `crdb_region` column, follower reads, force Serializable). It is bundled at the root of the `CockroachDB.DotNet.Core` nupkg.
+
 ## Architecture
 
 ![Architecture](images/architecture.svg)

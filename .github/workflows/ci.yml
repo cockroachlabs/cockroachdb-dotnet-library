@@ -43,3 +43,12 @@ jobs:
 
       - name: Test
         run: dotnet test -c Release --no-build --verbosity normal
+
+      - name: Verify AGENTS.md is baked into the Core nupkg
+        run: |
+          set -euo pipefail
+          dotnet pack src/CockroachDB.DotNet.Core/CockroachDB.DotNet.Core.csproj -c Release -o nupkgs
+          nupkg=$(ls nupkgs/CockroachDB.DotNet.Core.*.nupkg | head -1)
+          unzip -p "$nupkg" AGENTS.md | grep -q . \
+            || { echo "AGENTS.md missing or empty in $nupkg"; exit 1; }
+          echo "AGENTS.md present and non-empty in $nupkg"
