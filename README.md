@@ -23,7 +23,7 @@ Packages are published to this repository's **GitHub Pages NuGet feed** — no t
 ```
 
 ```bash
-dotnet add package CockroachDB.DotNet.Core --version 0.2.0
+dotnet add package CockroachDB.DotNet.Core --version 0.2.1
 ```
 
 API reference: https://cockroachlabs.github.io/cockroachdb-dotnet-library/
